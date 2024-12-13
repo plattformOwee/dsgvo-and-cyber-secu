@@ -1,0 +1,12 @@
+- [x] print starten
+- [x] zimmer aufräumen
+- [x] Geschirr spülen
+- [x] unten becken abschütten
+- [x] wäsche samt hose rein
+- [x] abspülen starten
+- [x] kochen
+- [x] haare waschen 
+- [x] wäsche aufhängen
+- [x] 5 min pschritte morgens machen
+- [ ] schlafen mit one piece zum lesen
+- [ ] 

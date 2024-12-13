@@ -1,0 +1,46 @@
+- [x] connect with simple api script and make all the security stuff and give back 1 if it worked 0 if denied in some way (for example wrong data)
+- [ ] Make login and signup with jwp
+	- [x] main.dart (redirects to signup)
+	- [ ] signup
+		- [x] signup with email verification 
+		- [x] login with jwt token
+		- [x] jwt token decode into ID
+		- [ ] Get layout files from the project from iTechnolabs
+		- [ ] connect them to my backend
+			- [ ] signup
+			- [ ] code
+			- [ ] login
+
+- [ ] SECURITY CHECKLIST
+	- [ ] look in chat compile what chatgpt all said
+		- [ ] MongoDB binded IP
+		- [ ] All requests over httpS later when hosted
+		- [ ] mongoDB installation be network service i think (look in chatt)
+
+- [ ] ALLES DOCUMENTIEREN
+	- [ ] in textform
+		- [ ] [[wie funktioniert der code]]
+	- [ ] als um diagramme
+- [x] redirect url zu der die ich gemacht 
+- [x] document_id var speichern
+- [x] json changen
+	- [x] "api_callback_url": "http://krasserserver.com:8004/callback.php" 
+	- [x] "sign_success_redirect_url": "https://fahrschule-peppermint.com/successfully-signed/"
+	- [x] "delivery_method": "api"
+	- [ ] die reject_redirect_url = noch erstellen
+	- [x] "delivery_method": "api"
+	- [ ] "process_management":"esign" zu qes
+	- [x] nochmal checken ob die alle richtig geändert wurden
+	- [ ] 
+- [x] post update 
+	- [x] callen
+	- [x] response 
+	- [x] nochmal checken
+- [x] die delivery urls raus lesen und in webview anzeigen
+- [x] mit contract menu verbinden
+	- [x] Contract Daten -> api.php + startdocument
+	- [x] delivery urls dem jeweiligen nutzer zukommen lassen durch api call wo alles kurz gehandelt und delivery url zurückgegeben wird
+	- [x] webview(delivery url) jedem nutzer die seine
+- [ ] login und signup with jwt tokens
+	- [x] bisher gemacht heute [[vortschritt login_singup bloc]]
+	- [ ] andere aproach stück für stück 

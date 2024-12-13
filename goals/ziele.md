@@ -1,0 +1,7 @@
+[[Klimaschutz vorantreiben]]
+[[Firmen haben um einflussradius zu erhöhen weil capitalism]]
+[[kapitalismus kritik üben und alternativsystem aufzeigen]] 
+[[transistion1]] 
+[[objekte]] 
+[[Todos]] 
+-[ ] 

@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"47f5c7fb4d55ac52","type":"text","text":"main.dart","x":-540,"y":-360,"width":250,"height":60,"color":"5"},
+		{"id":"700ca90fd7d109c9","type":"text","text":"signup_screen","x":-240,"y":-360,"width":250,"height":60,"color":"5"},
+		{"id":"b1974f3e065c7459","type":"text","text":"verify_code.dart","x":135,"y":-360,"width":250,"height":60,"color":"5"},
+		{"id":"c66ad9ced34bad42","type":"text","text":"signup_jwt.php","x":-20,"y":-580,"width":250,"height":60,"color":"2"},
+		{"id":"ef7618a88e8d07d3","type":"text","text":"DB \"users\"","x":-20,"y":-800,"width":250,"height":60},
+		{"id":"091249862fc6d6bf","type":"text","text":"verify_code.php","x":360,"y":-580,"width":250,"height":60,"color":"2"},
+		{"id":"6301344ed3b9e7a8","type":"text","text":"DB \"users\"","x":360,"y":-800,"width":250,"height":60},
+		{"id":"b1f099395a1faab8","x":820,"y":-550,"width":440,"height":450,"type":"file","file":"direct lending.canvas"}
+	],
+	"edges":[
+		{"id":"2a04f1f1dcbd06ce","fromNode":"47f5c7fb4d55ac52","fromSide":"right","toNode":"700ca90fd7d109c9","toSide":"left"},
+		{"id":"1ef1164c356b9e9e","fromNode":"700ca90fd7d109c9","fromSide":"right","toNode":"c66ad9ced34bad42","toSide":"bottom","label":"userdata"},
+		{"id":"53477366c2d5e49c","fromNode":"c66ad9ced34bad42","fromSide":"bottom","toNode":"700ca90fd7d109c9","toSide":"top","label":"\"user created\""},
+		{"id":"e1893009463464ff","fromNode":"700ca90fd7d109c9","fromSide":"right","toNode":"b1974f3e065c7459","toSide":"left"},
+		{"id":"a2c606ae5c3fce9e","fromNode":"b1974f3e065c7459","fromSide":"right","toNode":"091249862fc6d6bf","toSide":"bottom","label":"code"},
+		{"id":"b66b4b1286d6928a","fromNode":"091249862fc6d6bf","fromSide":"bottom","toNode":"b1974f3e065c7459","toSide":"top","label":"jwt token"},
+		{"id":"4f4289453c34a8e4","fromNode":"c66ad9ced34bad42","fromSide":"top","toNode":"ef7618a88e8d07d3","toSide":"bottom","label":"save userdata & verif_code"},
+		{"id":"2050a14d186d711e","fromNode":"6301344ed3b9e7a8","fromSide":"bottom","toNode":"091249862fc6d6bf","toSide":"top","label":"code correct?"},
+		{"id":"68f2c36fea620a5b","fromNode":"b1974f3e065c7459","fromSide":"right","toNode":"b1f099395a1faab8","toSide":"left"}
+	]
+}

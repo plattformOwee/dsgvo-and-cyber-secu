@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"de45458f3894a551","x":-720,"y":-740,"width":400,"height":400,"type":"file","file":"login_signup flow.canvas"},
+		{"id":"edc18c048e23c665","x":-240,"y":-740,"width":400,"height":400,"type":"file","file":"direct lending.canvas"}
+	],
+	"edges":[
+		{"id":"d0ae014fba7ebc66","fromNode":"de45458f3894a551","fromSide":"right","toNode":"edc18c048e23c665","toSide":"left"}
+	]
+}

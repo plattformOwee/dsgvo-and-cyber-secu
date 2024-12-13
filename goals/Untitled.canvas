@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"d351963b62dfeee6","x":-560,"y":-380,"width":250,"height":60,"type":"text","text":"app"},
+		{"id":"c459d4e48ab36407","x":-738,"y":-164,"width":250,"height":60,"type":"text","text":"screens\n"},
+		{"id":"fe1f85249ce06ec0","x":-1149,"y":20,"width":250,"height":600,"type":"text","text":"homescreen\nasdlfhölaksfdh\n- [ ] sdf"},
+		{"id":"87b3e3cc093064f4","x":-340,"y":-80,"width":400,"height":400,"type":"file","file":"ziele.md"}
+	],
+	"edges":[
+		{"id":"5ff6169c1f270448","fromNode":"d351963b62dfeee6","fromSide":"bottom","toNode":"c459d4e48ab36407","toSide":"top"},
+		{"id":"894d16f365f68c5e","fromNode":"c459d4e48ab36407","fromSide":"bottom","toNode":"fe1f85249ce06ec0","toSide":"top"}
+	]
+}

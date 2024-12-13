@@ -1,0 +1,408 @@
+{
+  "main": {
+    "id": "e059fde29a0467e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "d52cad0b526c14da",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8dd498695738cdfd",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "login_signup flow.canvas",
+                "viewState": {
+                  "x": 122.57267441860463,
+                  "y": -165.08720930232565,
+                  "zoom": -0.5250199602648742
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "login_signup flow"
+            }
+          },
+          {
+            "id": "7a5e2aabee0a7edc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Schuldschein design.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Schuldschein design"
+            }
+          },
+          {
+            "id": "08986f310c04f292",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "next message.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "next message"
+            }
+          },
+          {
+            "id": "2f8b851cd5b90c10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "owee developmen AAA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "owee developmen AAA"
+            }
+          },
+          {
+            "id": "76a51aab2dc9b75e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vortschritt login_singup bloc.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "vortschritt login_singup bloc"
+            }
+          },
+          {
+            "id": "b536aa585d9e8d58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wie funktioniert der code.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "wie funktioniert der code"
+            }
+          },
+          {
+            "id": "146f8b66ff7224f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "In der Früh.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "In der Früh"
+            }
+          },
+          {
+            "id": "964ccaf45317c49b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ngrok.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ngrok"
+            }
+          },
+          {
+            "id": "33b14d26535424c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 5"
+            }
+          },
+          {
+            "id": "218c3d88bf303064",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 2"
+            }
+          },
+          {
+            "id": "2b3dbf84c90f6230",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.5"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.5"
+            }
+          },
+          {
+            "id": "4d954300fa8702b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 3"
+            }
+          },
+          {
+            "id": "dbaa576dab163678",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 4"
+            }
+          },
+          {
+            "id": "62fb1122e845f5f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 2"
+            }
+          },
+          {
+            "id": "d79945b75b41bedc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "week goals.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "week goals"
+            }
+          },
+          {
+            "id": "6eb4caaea11786bd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ede7686911ef1908",
+    "type": "split",
+    "children": [
+      {
+        "id": "941dcc257f65904d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb9c41c7f91aad03",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4c35d22e21c8792d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "82b201ead7a9a9cf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "f5315bc9e35d323b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4512c9d57f689e7f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "73a2e7f6ae5658d2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Timetracking.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Timetracking"
+            }
+          },
+          {
+            "id": "545ce4f563339210",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Timetracking.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Timetracking"
+            }
+          },
+          {
+            "id": "800bb85fca280040",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "875cda1573579b09",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Timetracking.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Timetracking"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "7a5e2aabee0a7edc",
+  "lastOpenFiles": [
+    "Untitled 7.md",
+    "next message.md",
+    "Schuldschein design.md",
+    "kapitalismus kritik üben und alternativsystem aufzeigen.md",
+    "Untitled 6.md",
+    "login_signup flow.canvas",
+    "app.canvas",
+    "direct lending.canvas",
+    "commands and files that have worked.md",
+    "owee developmen AAA.md",
+    "Todo.md",
+    "wie funktioniert der code.md",
+    "vortschritt login_singup bloc.md",
+    "ngrok.md",
+    "Untitled 2.md",
+    "Untitled 3.md",
+    "Untitled 4.md",
+    "Untitled 5.md",
+    "changed.json.md",
+    "week goals.md",
+    "Timetracking.md",
+    "Password.md",
+    "Owee documentation.md",
+    "ziele.md",
+    "youtube short socialist.md",
+    "werte.md",
+    "newfromtemplate.md",
+    "Untitled.md",
+    "owee App entwicklung.md",
+    "Untitled.canvas"
+  ]
+}
