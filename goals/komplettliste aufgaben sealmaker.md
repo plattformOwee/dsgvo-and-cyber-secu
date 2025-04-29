@@ -1,0 +1,49 @@
+- [ ] alles auf demo nevou umsetzen
+	- [ ] den neuen und richtigen contract rein machen
+		- [x] als pdf erstellen den bestmöglichen selbstgemachten vertrag mit sealmaker logo oben rechts machen
+		- [ ] die richtigen angaben von den Nutzerdaten in den vertrag eintragen von server in vertrag bringen
+			- [ ] am besten gleich mit ids für anonymisierung
+			- [ ] datenbank mit "id:rechtlich relevante personendaten" gespeichtert und wenn zahlungen ausfallen und auch inkasso nicht hilft, werden die namen bekannt gegeben das ganze wird auch in der datenbank und in der app mit symbolen (jetzt erstmal wörtern) getrackt und angezeigt.
+		- [ ] für demo video ein mal mit eigener kreditkarte auf unterschrift mit ausweis und gesicht umstellen und danach noch ein mal mit 2 faktor auth unterschreiben und das ganze aufnehmen mit einem besseren handy mit nativer bildschirmaufzeichnung 
+		- [ ] demo video zusammenstellen mit allem erklärt/ zumindest gezeigt (zielgruppe: investoren und professionell interessierte)
+		- [ ] view button im marktplatz funktionabel machen
+		- [ ] verleiher homescreen umsetzen
+			- [ ] bubble layouts von ausleiher homescreen mit dem abgerundetem grauen oben zu den im verleiherscreen benötigten layouts benutzen und umfunktionieren
+				- [ ] topbar
+				- [ ] charts
+				- [ ] list of contracts
+					- [ ] designed
+					- [ ] layout file programmed
+					- [ ] made functional connected to server logic
+				- [ ] histrory of all payments and stuff
+			- [ ] den switch zwischen verleiher und ausleiher umsetzen
+		- [ ] die buttons im menu funktionabel machen 
+			- [ ] logout
+			- [ ] referal code (mindest soweit das man es demo mäsig benutzen kann)
+			- [ ] pay out,
+			- [ ] pay in
+		- [ ] das marktplatz-durchsuchen-menu besser stylen
+	- [ ] view-contract mit ausgefüllten-daten umsetzen
+	- [ ] umstellen auf Ausweis-unterschrift (mit limit)
+	- [ ] die Verleiher Homepage umsetzen
+		- [ ] kontostand  
+		- [ ] einzahlen
+		- [ ] kontostrand verlauf chart 
+			- [ ] designen xd
+			- [ ] umsetzen layout file
+			- [ ] mit server verbinden
+		- [ ] anstehende rückzahlungen
+		- [ ] Historie
+	- [ ] einzahl-menu min oberflächlich umsetzen
+	- [ ] profil page mit bild rund oben mitte und persönlichen daten und zahlungsmethoden und auszahlung ausloggen usw
+
+- [ ] sealmaker insta kacheln fertig designen und hochladen
+- [ ] gute fotos von uns machen
+	- [ ] haare weiß färben
+	- [ ] haare schneiden lassen
+- [ ] linkedin auffrischen
+- [ ] produktdemo bereit haben 
+- [ ] sebastian welp anschreiben
+
+- [ ] (ein video in dem alle funktionen gezeigt werden mit Erklärstimme einfach Standard ) 
+	- [ ] erklärstimme audio: "wenn der verleiher nicht bezahlt, dann wird er automatisch zunächst per email und dann per Brief erinnert an die Zahlung, erst bei einem Inkassofall, fallen extra kosten an. Hinzu kommt, das der verleiher bei jedem vertrag bis zu 3 mal eine zahlung verschieben kann und den zeitpunkt innerhalb des monats festlegen k...  Wenn zahlungen ausfallen, wird der name des ausleihers bekannt und ein inkassoverfahren eingeleitet (das klingt eig iwie nicht so gut haha)" visuell dazu: die app und animierte hand und vlt bisschen schrift in diesem 2d erklärvideo style vlt

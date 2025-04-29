@@ -1,0 +1,11 @@
+- das BG (hilft bei fragen wohl zu betriebssicherheit)
+- einen "fachkraft"(oder so ähnlich), elektriker bekommen der das prüft und steckdosen nummerieren um sie identifizierbar zu machen. BG akzeptiert schon wenn man dran arbeitet
+- brandschutz
+	- 30 sec nach ltih brand raus nicht löschen versuchen
+	- es wird ein branschutzbeauftrager "hier" ausgebildet 
+	- feuerlöscher muss man bedienen können
+	- Zündquellen prüfen auch reihen an mehrfachsteckdosen ist verboten wegen (sowas sagt einem dann die elektriker fachkraft)
+	- dinge mit gefahrenstoffen mit gefahrenlabels die vom cheff bereit gestellt werden müssen gegoogelt werden welche gefahren und anweisungen es gibt und dementsprechend den arbeitnehmer dementsprechend zu belehren
+	- elektrogeräte müssen geprüft werden
+- Anweisungen zum richtigen verhalten auf zb agressive kunden oder diebstahl geben
+- 

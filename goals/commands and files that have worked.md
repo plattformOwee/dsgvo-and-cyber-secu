@@ -1,13 +1,35 @@
+#### socket.io
+ssh root@207.154.195.9
+lwp7uB!b
+to find out if port is used: sudo ss -tlnp | grep :3000
+cd realtime-game
+nano socket.js > look at socket.js file 
+node socket.js > start in terminal
+##### pm2
+npm install -g pm2
+pm2 start server.js --name realtime-game
+pm2 save
+pm2 startup 
 
 
+C:\Users\vau8>curl -X POST http://node02.krasserserver.com:8002/swipe_chatt_play_api/profile/suggest_5_profiles.php -H "Content-Type: application/json" -d "{\"data\":{\"filters\":{\"age_range\":{\"min\":19,\"max\":49},\"max_distance_km\":62,\"gender\":\"Female\"},\"about_you\":{\"hobbies\":[\"Gaming\"]},\"no_goes\":[\"Smoking\"],\"preferences\":{\"sport\":\"Not Interested\",\"relationship_intent\":\"New Experiences\"}}}"
+{"status":"success","profiles":[]}
 
-
+#### api server
+node02.krasserserver.com:8002
+sftp://luna.079b3ae5@panel.krasserserver.com:2022
+luna luna 22
 
 #### mongosh
 cmd open a administrator
 - net start MongoDB
 - mongosh -u admin -p securepassword --authenticationDatabase admin
 
+mongosh "mongodb://burgermeister:drdrjecky14@panel.krasserserver.com:19028/admin"
+
+clear chats:
+swipe_chat_play> db.users.updateMany( {}, /* Match all users*/ { $unset: { chats: "" } } /* Remove the "chats" field*/ );
+db.users.updateOne({ username: "luna" }, { $unset: { chats: "" } });
 
 ##### paths
 ##### copied for later

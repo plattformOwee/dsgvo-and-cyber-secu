@@ -1,0 +1,40 @@
+- [x] wohnung will doch behalten
+	- [x] dude auf insta schreiben 
+	- [x] viele angebote dafür zuschicken und ein vor-formuliertes anschreiben
+
+- [ ] strom umstellen
+	- [x] email checken  [[nachricht an strom]]
+	- [x] nochmal anrufen und schreiben
+	- [ ] nochmal schreiben
+- [ ] milan
+	- [ ] schuldschein machen
+	- [ ] vr bank kontoauszüge anfragen
+		- [ ] anfragen
+		- [ ] durchschauen
+		- [ ] milan schreiben was sache ist
+	- [ ] sara fragen wann nochmal das treffen mit ihm ausgemacht war
+- [ ] sim PUK finden
+	- [ ] paps gefragt online login
+	- [ ] nach fsg fahren
+	- [ ] suchen
+- [ ] connections pflegen
+	- [ ] holger
+		- [x] anschreiben
+		- [x] austauschen 
+		- [x] apps zeigen
+		- [ ] mal fragen ob er wen kennt der die dating app für 5 bis 10 k marktreif machen kann
+	- [ ] carsten
+		- [ ] 
+- [ ] cutes geschenk für karo
+	- [ ] den ring
+		- [ ] schachtel holen von javier
+	- [ ] neue ohrringe machen
+		- [ ] cute herz ohrringe
+		- [ ] herz mit glitzerstein
+- [ ] handy
+	- [ ] daten übertragen
+	- [x] alle nötigen apps runterladen 
+		- [x] spotify
+		- [x] soundcloud
+		- [x] telegram
+	- [ ] 

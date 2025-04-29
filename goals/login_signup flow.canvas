@@ -7,7 +7,7 @@
 		{"id":"ef7618a88e8d07d3","type":"text","text":"DB \"users\"","x":-20,"y":-800,"width":250,"height":60},
 		{"id":"091249862fc6d6bf","type":"text","text":"verify_code.php","x":360,"y":-580,"width":250,"height":60,"color":"2"},
 		{"id":"6301344ed3b9e7a8","type":"text","text":"DB \"users\"","x":360,"y":-800,"width":250,"height":60},
-		{"id":"b1f099395a1faab8","x":820,"y":-550,"width":440,"height":450,"type":"file","file":"direct lending.canvas"}
+		{"id":"b1f099395a1faab8","type":"file","file":"direct lending.canvas","x":610,"y":-520,"width":440,"height":380}
 	],
 	"edges":[
 		{"id":"2a04f1f1dcbd06ce","fromNode":"47f5c7fb4d55ac52","fromSide":"right","toNode":"700ca90fd7d109c9","toSide":"left"},

@@ -1,0 +1,41 @@
+- [ ] chat
+  - [ ] all types of bubbles
+    - [ ] answer_to message
+	    - [x] bubble designed
+	    - [x] bubble layout programmed
+	    - [ ] working
+	    - [x] backswiping with arrow appearing and a back swipe detection threshold
+	    - [x] reaction on backswipe >
+		    - [x] show message pinned above inputfield (must be able to be all types of Bubbles that exist)
+		    - [x] change chat.dart layout to have a space above the inputfield which can be visible or invisible and which holds the referenced message, to do so, it must as input accept json with both type and content and put into the different layouts and put them above inputfield respectively
+		    - [x] also first just ask chatgpt to figure that out (if using json like this makes sense or maybe another approach more general one is possible)
+		- [x] user can type response>
+			- [x] when sending, the id of the referenced message, the content of the referenced message and the answer must be saved and shown in the “answer to” bubble layout
+			    - [x] may require generalizing the answer bubble to also accept images
+- [ ] comment on elements
+	- [ ] match.php umschreiben sodass es bei der liste an profilen auch die mongod_id für jedes profil mitgibt
+	- [ ] die app so umschreiben, dass sie auch diese Information abrufbar zu jedem profil parat hat
+	- [ ] swipe.php so umschreiben das es nicht mehr mit dem namen arbeitet sondern direkt mit der user id
+		- [ ] auch dessen aufruf entsprechend verändern
+	- [ ] react_profile.php umschreiben um auch mit der id zu arbeiten
+	- [ ] popup chat umschreiben sodass es wirklich den freien space für die bubbles und das profilbild oben mit namen hat sowie der chat als längliches popup weiterhin mit x symbol oben rechts. Hier soll dann die erste nachricht wenn geschickt auch tatsöchlich angezeigt werden
+	- [ ] abschicken der nachricht mit anzeigen im chat fertig machen
+
+- [ ] profiles complete
+	- [ ] 2 more profile elements
+		- [ ] frage mit antwort zeile
+		- [ ] bild mit prompt Auswahl oder frei text schreiben
+			- [ ] ein screen mit liste aller fragen ohne gruppierungen i guess
+			- [ ] mit durchsuchezeile die auch eingabezeile ist falls es nicht gefunden wird
+	- [ ] profile editing
+		- [ ] ganzes profil runter schieben oben "profile / info"-switch in der mitte und rechts das sparcle emoji mit popup das frägt, ob man das profiel automatisch sortieren will, dann ist danach dort wo davor sparcle symbol war ein back button. Generell sollte das was wie das profiel aussieht eine historie haben also alle varianten die es je gab gespeichert sein und nutzer kann mit pfeil vor und zurück gehen.
+		- [ ] jedes element durch drag release sortierbar machen
+	- [ ] info editing
+		- [ ] eine page in der einfach alle screens vom anfang untereinander sind
+			- [ ] jeder zu komplexe screen wie standort oder so öffnet sich dann wenn man auf eine zeile in diesem menu clickt
+			- [ ] irgendwann dann auch nicer designen
+	- [ ] alle bubbles nicer designen
+	- [ ] unternehmen anmelden
+	- [ ] in handelsregister eintragen lassen
+	- [ ] nummer benutzen für gpay
+	- [ ] gpay oder iwas einbinden oder einfach nur sepa vlt

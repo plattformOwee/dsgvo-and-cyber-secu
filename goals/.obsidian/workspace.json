@@ -4,232 +4,80 @@
     "type": "split",
     "children": [
       {
-        "id": "d52cad0b526c14da",
+        "id": "e5df0c8b5febe5ab",
         "type": "tabs",
         "children": [
           {
-            "id": "8dd498695738cdfd",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "login_signup flow.canvas",
-                "viewState": {
-                  "x": 122.57267441860463,
-                  "y": -165.08720930232565,
-                  "zoom": -0.5250199602648742
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "login_signup flow"
-            }
-          },
-          {
-            "id": "7a5e2aabee0a7edc",
+            "id": "0064b7b94fa51c2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Schuldschein design.md",
+                "file": "commands and files that have worked.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Schuldschein design"
+              "title": "commands and files that have worked"
             }
           },
           {
-            "id": "08986f310c04f292",
+            "id": "c86a2902275515e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "next message.md",
+                "file": "swipe_chat_play project doc.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "next message"
+              "title": "swipe_chat_play project doc"
             }
           },
           {
-            "id": "2f8b851cd5b90c10",
+            "id": "06f2b3419497d280",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "owee developmen AAA.md",
+                "file": "battleship by gemini 2.5 pro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "owee developmen AAA"
+              "title": "battleship by gemini 2.5 pro"
             }
           },
           {
-            "id": "76a51aab2dc9b75e",
+            "id": "cdf445cc0b8f661b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vortschritt login_singup bloc.md",
+                "file": "dinge zu klären.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "vortschritt login_singup bloc"
+              "title": "dinge zu klären"
             }
           },
           {
-            "id": "b536aa585d9e8d58",
+            "id": "213d06a8a10c27fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wie funktioniert der code.md",
+                "file": "make reorder possible prompts.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wie funktioniert der code"
-            }
-          },
-          {
-            "id": "146f8b66ff7224f4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "In der Früh.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "In der Früh"
-            }
-          },
-          {
-            "id": "964ccaf45317c49b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ngrok.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ngrok"
-            }
-          },
-          {
-            "id": "33b14d26535424c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 5.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 5"
-            }
-          },
-          {
-            "id": "218c3d88bf303064",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 2"
-            }
-          },
-          {
-            "id": "2b3dbf84c90f6230",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.7.5"
-              },
-              "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
-            }
-          },
-          {
-            "id": "4d954300fa8702b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 3"
-            }
-          },
-          {
-            "id": "dbaa576dab163678",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 4.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 4"
-            }
-          },
-          {
-            "id": "62fb1122e845f5f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 2"
-            }
-          },
-          {
-            "id": "d79945b75b41bedc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "week goals.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "week goals"
-            }
-          },
-          {
-            "id": "6eb4caaea11786bd",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "make reorder possible prompts"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -248,7 +96,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -285,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "f5315bc9e35d323b",
@@ -302,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Timetracking.md",
+                "file": "Schuldschein design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -312,7 +160,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Timetracking"
+              "title": "Backlinks for Schuldschein design"
             }
           },
           {
@@ -321,12 +169,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Timetracking.md",
+                "file": "Untitled 41.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Timetracking"
+              "title": "Outgoing links from Untitled 41"
             }
           },
           {
@@ -348,17 +196,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Timetracking.md"
+                "file": "n.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Timetracking"
+              "title": "Outline of n"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -372,37 +224,38 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "7a5e2aabee0a7edc",
+  "active": "0064b7b94fa51c2a",
   "lastOpenFiles": [
-    "Untitled 7.md",
-    "next message.md",
-    "Schuldschein design.md",
-    "kapitalismus kritik üben und alternativsystem aufzeigen.md",
-    "Untitled 6.md",
-    "login_signup flow.canvas",
-    "app.canvas",
-    "direct lending.canvas",
+    "make reorder possible prompts.md",
+    "Untitled 58.md",
+    "dinge zu klären.md",
     "commands and files that have worked.md",
-    "owee developmen AAA.md",
-    "Todo.md",
-    "wie funktioniert der code.md",
-    "vortschritt login_singup bloc.md",
-    "ngrok.md",
-    "Untitled 2.md",
-    "Untitled 3.md",
-    "Untitled 4.md",
-    "Untitled 5.md",
-    "changed.json.md",
-    "week goals.md",
-    "Timetracking.md",
-    "Password.md",
-    "Owee documentation.md",
-    "ziele.md",
-    "youtube short socialist.md",
-    "werte.md",
-    "newfromtemplate.md",
-    "Untitled.md",
-    "owee App entwicklung.md",
+    "swipe_chat_play project doc.md",
+    "wichtige kontakte.md",
+    "Untitled 54.md",
+    "Untitled 56.md",
+    "Untitled 55.md",
+    "battleship by gemini 2.5 pro.md",
+    "Untitled 53.md",
+    "understand my.md",
+    "nachricht an strom.md",
+    "Schuldschein design.md",
+    "Untitled 52.md",
+    "komplettliste Aufgaben sswipe chat play.md",
+    "n.md",
+    "Untitled 51.md",
+    "an karo.md",
+    "Untitled 50.md",
+    "Untitled 49.md",
+    "komplettliste aufgaben sealmaker.md",
+    "Untitled 48.md",
+    "Untitled 46.md",
+    "Untitled 47.md",
+    "Untitled 43.md",
+    "login_signup flow.canvas",
+    "direct lending.canvas",
+    "app.canvas",
+    "Pasted image 20241223173730.png",
     "Untitled.canvas"
   ]
 }

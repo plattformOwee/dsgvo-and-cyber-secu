@@ -1,0 +1,51 @@
+- [ ] send profiles to friends  
+- [ ] make section specifically calledm "about you"
+- [x] a questions and answers block
+- [ ] favourite song / music taste and artists
+- [ ] eat (vegan, vegetarian, omnivore)
+- [ ] where you live
+- [ ] age (show or dont show)
+- [ ] want kids or not or uncertain
+- [ ] options like "cancle chat" "report to support " "block"  
+
+
+- send profiles to friends
+- profile verication  
+- make section specifically calledm "about you"  
+- spoken languages  
+- communication style / preferences (like instantl meet, call first, i dont like to text  
+- love language  
+- style of live (like drinker, party livestyle, study whatever)  
+- drinken habbits
+- smoking habits
+- active at night/ active at day  
+- hobbies (would not put as hard filter)  
+- favourite song / music taste and artists  
+- dayly habbits / things to do.
+- how to get to know me
+- things i like (maybe soft drinks, maybe soft cloth etc)  
+- do many options like. "I like so much if you..." "are yourself... ) many sentences like that and anwer options  
+- wunschzettel für unser erstes date  
+- questions about pets .. (want, have what)  
+- eat (vegan etc)
+- my  
+- answer times typical  
+- whre you live  
+- show age or not  
+- show or dont show distance in meeters  
+- show music from spotify profile  
+- family etc: "want children" etc  
+- swipe page with different collections (travel, friends, fun, cofee, museum, nature, gamers,  
+- Chat beginner messages example when openiging a new chat (one big card which you can swipe)  
+- options like "cancle chat" "report to support " "block"  
+- voice messages  
+- option to block contacts or even contacts of contacts like shared friends  
+- top 4 list  
+- (adds as cards)  
+  
+- pay for:  
+- profiles who liked you (but if you see a profile you can see if they liked you)  
+- already swiped profiles  
+- no adds  
+- endless swiping (free)  
+- exposure (for example be more in the top 4 of other
