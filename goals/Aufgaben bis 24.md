@@ -1,0 +1,12 @@
+- [ ] liste an aufgaben mit meistem vorzeige effekt bei owee machen 
+	- [ ] den richtigen vertrag rein aber nicht zeilen mappen sondern schon im pdf die daten haben nur fürs zeigen (mit neuem logo oben)
+	- [ ] homepage von verleiher und ausleiher machen
+	- [ ] view contract mit webview machen statt wie jetzt browser öffnen lassen auch hier gut aussehenden vertrag rein
+	- [ ] ein mal kredikarte hinterlegen und mit ausweis unterschreiben und abfilmen
+- [ ] simple lösung für paps anforderungen finden
+	- [ ] intensivkurs sichtbarer machen
+		- [ ] die website machen
+		- [ ] burger menu überall hin kopieren
+		- [ ] in burger menu packen
+	- [ ] mediathek weiter
+	- [ ] 

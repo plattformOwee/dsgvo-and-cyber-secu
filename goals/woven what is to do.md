@@ -1,0 +1,20 @@
+- [ ] [[DSGVO]]
+	- [ ] dateninventur & RoPA (denke verarbeitungsverzeichnis) [[RoPA woven]]
+	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]]
+	- [ ] [[Privacy Policy und Impressum]]
+	- [ ] [[crashlytics]]
+	- [ ] [[User-Rights-API]] 
+	- [ ] [[Datenminimierung & Security]]
+	- [ ] [[Auftragsverarbeitung]]
+	- [ ] [[Breach-Process]]
+- [ ] [[cyber security]]
+	- [ ] http > https
+- [ ] y-combinator bewerbung
+	- [ ] linked-in profil machen
+	- [ ] bewerben
+- [ ] 
+- [x] hinge öffnen signup flow klauen 
+- [x] xd signup flow designen mit erklärungen und so dazwischen
+- [ ] das caption über fotos design problem:
+	- [ ] einen screen nach dem zuschneiden einfügen in dem man das bild element sieht und ne caption hinzufügen kann
+	- [ ] erstmal einfach image carousel haben weil sonst muss design voll geändert werden eig

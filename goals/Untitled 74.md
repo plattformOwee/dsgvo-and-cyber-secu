@@ -1,0 +1,3 @@
+- lukas das mit den kosten erklären
+- paps den intensivkurs vorschlag machen ne mongodb mit den terminen und für ihn ne app wo er die rein tun kann oder so
+- sealmaker den verleiher tab machen

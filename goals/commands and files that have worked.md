@@ -11,7 +11,6 @@ pm2 start server.js --name realtime-game
 pm2 save
 pm2 startup 
 
-
 C:\Users\vau8>curl -X POST http://node02.krasserserver.com:8002/swipe_chatt_play_api/profile/suggest_5_profiles.php -H "Content-Type: application/json" -d "{\"data\":{\"filters\":{\"age_range\":{\"min\":19,\"max\":49},\"max_distance_km\":62,\"gender\":\"Female\"},\"about_you\":{\"hobbies\":[\"Gaming\"]},\"no_goes\":[\"Smoking\"],\"preferences\":{\"sport\":\"Not Interested\",\"relationship_intent\":\"New Experiences\"}}}"
 {"status":"success","profiles":[]}
 

@@ -1,0 +1,6 @@
+- [ ] sergio anrufen
+	- [x] angeschrieben
+- [ ] dennis anschreiben wegen anlagen plänen
+- [x] tuca nach dj namen fragen
+- [ ] lineup machen
+- [ ] alle screens designen

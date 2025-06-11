@@ -1,0 +1,10 @@
+- [ ] lukas näher bringen warum owee nichts werden kann leider
+- [ ] den call mit holgers boy meistern und den nächsten lead bekommen am besten zu nem investor oder jemandem der ein angebot macht
+	- [ ] pitchdeck machen 
+	- [x] name finden 
+	- [ ] call halten
+	- [ ] wichtige fragen fragen
+		- [ ] finden erst
+			- [ ] hier list
+- [ ] Pilzdeko zum leuchten bringen
+- [ ] passenden background machen

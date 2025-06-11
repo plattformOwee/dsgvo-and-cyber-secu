@@ -1,0 +1,3 @@
+Wir haben nicht wirklich ein Budget geplant aber der plan ist, das wir auf <= 0 an Ausgaben raus kommen (mit einnahmen verrechnet).
+Es ist halt so das wir auch eine andere Anlage von Bekannten klären könnten und würden da bei so 0 - 100 € raus kommen aber es wäre auch praktisch die gleiche Anlage über beide Tage nutzen zu können dann müssten wir auch keine extra anschleppen und sparen dadurch ja auch aufwand und Geld und man könnte sich den preis teilen oder so. 
+Ein Angebot oder eine umgefähre price-range was ihr euch vorstellen könnt wäre schon nice um zu wissen ob man da zusammen findet (für beide tage). 

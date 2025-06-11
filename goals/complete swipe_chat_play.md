@@ -1,0 +1,101 @@
+- [ ] finish profile creation and signup flow
+	- [x] decide between image carousel and images in profile to scroll 
+		- [x] what do i prefer?
+			- [x] scroll
+				- [x] it fosters personal connection more becouse it gets people to scroll throguh the profile
+	- [x] bring them into order
+	- [x] decide order for now for product demonstration (they will not realize that it could be better)
+		- [x] signup as is (without name)
+		- [x] about you layout
+			- [ ] Name
+			- [ ] gender 
+			- [ ] pronouns (show in proifle [ ])
+			- [ ] sexual orientation (show in proifle [ ])
+			- [ ] zodiac sign (optional) (show in proifle [ ])
+			- [ ] 
+			- [ ] Month of birth
+			- [ ] smoking (show in proifle [ ])
+			- [ ] drinking alc (show in proifle [ ])
+			- [ ] smoking weed (show in proifle [ ])
+			- [ ] taking hard drugs (show in proifle [ ])
+			- [ ] music taste (show in proifle [ ])
+			- [ ] religion (show in proifle [ ])
+			- [ ] career (show in proifle [ ])
+		- [x] dating radius 
+		- [x] searching for
+		- [x] old images with carousel (and for now have no images with captions)
+		- [x] open to
+		- [x] question and inputfield "conversation starter"
+			- [x] make layout in flutter 
+			- [x] make work with backend
+		- [x] qa (profil_elemente.dart glaub ich)
+		- [x] prompt voicememo (skippable)
+		- [x] topic suggestions (skippable)
+			- [x] make work with backend
+			- [x] put into order
+	- [ ] decide order
+		- [ ] give email
+		- [ ] give code
+		- [ ] give firstname
+		- [ ] add personal details
+		- [ ] open to 
+		- [ ] hobbies
+		- [ ] add images (add a screen after cutting the image, where user can add a caption or choose one)
+		- [ ] add elements screen
+			- [ ] holds list of elements and on top "chose element to add"
+			- [ ] user clicks and element > progressbar at the top fills up and user is asked to add another element 
+		- [ ] 
+- [ ] 
+
+
+- [x] make matching work again
+- [x] add the new profile elements
+	- [x] in mongosh
+	- [x] as layout files
+	- [ ] as consequence of menus
+		- [ ] prompt image
+			- [ ] steal from hinge to xd
+				- [ ] liste
+				- [ ] layout mit caption oben bild unten
+				- [ ] 
+			- [ ] xd to layout file
+		- [ ] prompt inputfield
+			- [ ] steal from hinge to xd
+			- [ ] xd to layout file
+		- [ ] prompt voicememo
+			- [ ] steal from hinge to xd
+			- [ ] xd to layout file
+		- [ ] prompt topics
+			- [ ] steal from hinge to xd
+			- [ ] xd to layout file
+		- [ ] spotify 
+			- [ ] check with chatgpt how to do that
+			- [ ] steal from hinge to xd
+			- [ ] xd to layout file 
+
+- [ ] add the new react bubbles of the new elements aswell
+	- [ ] in mongosh
+		- [ ] write out each's json [[swipe_chat_play messages json]]
+		- [ ] create matches
+		- [ ] create a chat
+		- [ ] find id of that chat
+		- [ ] save new message types in there to test
+	- [ ] as layout files
+	- [ ] as consequence of reacting
+
+- [x] make reorder profile work again
+
+- [ ] iuntesivkurs auf webseite
+	- [ ] video startseite
+	- [ ] text + button als button auf startseite
+	- [ ] in burger menu
+	- [ ] in blogs
+	- [ ] in kostenkalkulator als extra button intesiv auto
+	- [ ] 
+
+
+heute noch:
+- [ ] voicememo add page with proper recording widget
+	- [ ] make main.dart with recording widget
+	- [ ] add rest to make it the "voicememo add page"
+	- [ ] add it as the recording widget to chat.dart
