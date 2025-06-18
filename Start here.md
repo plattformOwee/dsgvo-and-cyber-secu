@@ -1,18 +1,17 @@
-- [ ] [[DSGVO]]
+- [ ] DSGVO: 
 	- [ ] dateninventur & RoPA (denke verarbeitungsverzeichnis) [[RoPA woven]]
 	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]]
 	- [ ] [[Privacy Policy und Impressum]]
 	- [ ] [[crashlytics]]
-	- [ ] [[User-Rights-API]] 
+	- [ ] User-Rights-API: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/User-Rights-API.md
 	- [ ] [[Datenminimierung & Security]]
-	- [ ] [[Auftragsverarbeitung]]
+	- [ ] Auftragsverarbeitung: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Auftragsverarbeitung.md
 	- [ ] [[Breach-Process]]
-- [ ] https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/cyber-security.md
+      - [ ] cyber Security: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/cyber-security.md
 	- [ ] http > https
 - [ ] y-combinator bewerbung
 	- [ ] linked-in profil machen
 	- [ ] bewerben
-- [ ] 
 - [x] neuen signup flow
 - [x] xd signup flow designen mit erklärungen und so dazwischen
 - [ ] das caption über fotos design problem:
