@@ -7,4 +7,4 @@
 	- [ ] [[Datenminimierung & Security]] https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Datenminimierung%20%26%20Security.md
 	- [ ] Auftragsverarbeitung: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Auftragsverarbeitung.md
 	- [ ] [[Breach-Process]]: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Breach-Process.md
-      - [ ] cyber Security: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/cyber-security.md
+      - [ ] cyber Security: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/cyber%20security.md
