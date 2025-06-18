@@ -1,12 +1,12 @@
 - [ ] DSGVO: 
-	- [ ] dateninventur & RoPA (denke verarbeitungsverzeichnis) [[RoPA woven]]
-	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]]
-	- [ ] [[Privacy Policy und Impressum]]
-	- [ ] [[crashlytics]]
+	- [ ] dateninventur & RoPA (denke verarbeitungsverzeichnis) [[RoPA woven]]:[[https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/RoPA%20woven.md]]
+	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]]: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Rechtsgrundlage%20festlegen.md
+	- [ ] [[Privacy Policy und Impressum]]: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Privacy%20Policy%20und%20Impressum.md
+	- [ ] [[crashlytics]] : https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/crashlytics.md
 	- [ ] User-Rights-API: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/User-Rights-API.md
-	- [ ] [[Datenminimierung & Security]]
+	- [ ] [[Datenminimierung & Security]] https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Datenminimierung%20%26%20Security.md
 	- [ ] Auftragsverarbeitung: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Auftragsverarbeitung.md
-	- [ ] [[Breach-Process]]
+	- [ ] [[Breach-Process]]: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/Breach-Process.md
       - [ ] cyber Security: https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/cyber-security.md
 	- [ ] http > https
 - [ ] y-combinator bewerbung
