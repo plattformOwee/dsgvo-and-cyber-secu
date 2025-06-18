@@ -7,7 +7,7 @@
 	- [ ] [[Datenminimierung & Security]]
 	- [ ] [[Auftragsverarbeitung]]
 	- [ ] [[Breach-Process]]
-- [ ] [[cyber security]]
+- [ ] https://github.com/plattformOwee/dsgvo-and-cyber-secu/blob/master/cyber-security.md
 	- [ ] http > https
 - [ ] y-combinator bewerbung
 	- [ ] linked-in profil machen
