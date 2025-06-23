@@ -12,9 +12,32 @@
 - [ ] y-combinator bewerbung
 	- [ ] linked-in profil machen
 	- [ ] bewerben
-- [ ] 
-- [x] hinge öffnen signup flow klauen 
+- [ ] firmenanmeldung
+	- [ ] geld
+	- [ ] [[Gründungsurkunde und Gesellschaftsvertrag]]
+
+- [x] neuen signup flow
 - [x] xd signup flow designen mit erklärungen und so dazwischen
-- [ ] das caption über fotos design problem:
+- [x] das caption über fotos design problem:
 	- [ ] einen screen nach dem zuschneiden einfügen in dem man das bild element sieht und ne caption hinzufügen kann
-	- [ ] erstmal einfach image carousel haben weil sonst muss design voll geändert werden eig
+	- [x] erstmal einfach image carousel haben weil sonst muss design voll geändert werden eig
+
+- [ ] was brauch ich von wem um welchem dieser ziele zu dienen und wie bekomme ich es SCHNELLSTMÖGLICH?
+	- [ ] firmenanmeldung > geld > 
+		- [ ] lukas /
+		- [ ] gerd [[nachricht an gerd]]
+		- [ ] paps? (zumindest mal fragen könnte man)
+	- [ ] besseres design
+		- [ ] betty (geld ) >
+			- [ ] gerd
+	- [ ] bestätigung über dsgvo anforderungen und cyber security anforderungen
+		- [ ] digital mountain
+		- [ ] andere beratungsfirmen vielleicht
+		- [ ] holger
+			- [ ] carsten
+			- [ ] daniel
+	- [ ] server wieder laufen haben
+		- [ ]  felix motivieren oder einladen
+		- [ ] eigenen kaufen / geld >
+			- [ ] rita schreiben
+			- [ ] 

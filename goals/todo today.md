@@ -1,0 +1,39 @@
+- [ ] abwechselnd an diesen bereichen arbeiten
+	- [x] nachricht an gerd x 1
+	- [x] nachricht an karo x 1
+	- [x] nachricht an sebastian welp x 1
+	- [x] y combinator braucht man linked in?
+	- [x] app create profile flow reworked
+	- [ ] 
+	- [ ] 
+	- [ ] holger nochmal schreiben nach dem kontakt von daniel fragen
+	- [ ] test profiles better
+		- [x] remove images with captions
+		- [ ] add more different images
+	- [ ] app functionality
+		- [ ] noch sprach auswahl screen hinzufügen
+		- [ ] normales nachrichten schreiben also recording widget und normales send icon switch when writing text in inputfield and back when deleted
+		- [ ] images with captions remove for now only image carousel
+		- [ ] finnish new profile creation flow by just styling the rest of the profile creation like this new signup flow
+		- [ ] for now remove google login
+		- [ ] for now remove apple signup and login 
+	- [ ] unternehmensanmeldung
+		- [ ] [[nachricht an gerd]]
+		- [ ] [[vorgehen anmeldung]]
+		- [ ] versuchen schon heute den ersten schritt der anmeldung zu machen also die dokumente die für owee erstellt wurden umformulieren und quotes von 5 notaren einholen und geld von lukas holen obwohl das probably nur geht mit gerds vorheriger zustimmung
+		- [ ] 
+	- [ ] investment suche
+		- [ ] [[y combinator]]
+			- [ ] linked in
+				- [x] benötigt?
+					- [ ] ja > do it egal wie
+					- [x] nein > dont do it
+			- [ ] rest ausfüllen
+				- [ ] eventuelle unter aufgaben
+					- [ ] ein video über mich machen
+					- [ ] ein demo video aufnehmen
+		- [ ] holger
+		- [ ] daniel
+		- [ ] dude von see
+		- [ ] [[nachricht an sebastian welp]]
+		- [ ] 
