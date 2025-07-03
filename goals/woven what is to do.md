@@ -4,12 +4,20 @@
 	- [ ] [[Privacy Policy und Impressum]]
 	- [ ] [[crashlytics]]
 	- [ ] [[User-Rights-API]] 
+		- [ ] delete_me.php
+			- [ ] script exists and works by recording the request
+			- [ ] + a script to look each night for users to delete cron job
+				- [ ] sudo nano /var/www/woven/scripts/cleanup_delete_requests.php
+				- [ ] sudo tail -n 20 /var/www/woven/logs/cleanup.log
+		- [ ] request_me.php
 	- [ ] [[Datenminimierung & Security]]
 	- [ ] [[Auftragsverarbeitung]]
 	- [ ] [[Breach-Process]]
+	- [ ] [[encrypt as much as possible]]
 - [ ] [[cyber security]]
 	- [ ] http > https
 - [ ] y-combinator bewerbung
+	- [ ] braune haarfarbe kaufen haare anders machen mit hellen spitzen 
 	- [ ] linked-in profil machen
 	- [ ] bewerben
 - [ ] firmenanmeldung

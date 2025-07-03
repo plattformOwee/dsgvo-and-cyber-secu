@@ -1,181 +1,163 @@
-Below you’ll find three things you can copy straight into your repo:
+Below is an **updated bundle** that matches your **new Mongo-structure** (religion / politics bubbles, location radius, consent flags, etc.).  
+Just drop the Markdown files into `/legal/`, adjust the placeholders (🟡) and you’re good to commit.
 
-1. **Two ready-to-paste Markdown files**
-    
-    - `privacy_policy.md` – DSGVO-konform, deutsch/englisch gemischt
-        
-    - `impressum.md` – § 5 TMG / § 18 MStV
-        
-2. **Flutter & PHP glue code** for the in-app links
-    
-3. **Google Play “Data-Safety” cheat sheet** (what to tick in the Console)
-    
+---
 
-_Everything is kept minimal; drop in your real company data and tweak wording as needed. This is _not_ formal legal advice._
+## 1 · `privacy_policy.md` _(template)_
 
-1 privacy_policy.md (Example)
-```
+```markdown
 # Datenschutzerklärung / Privacy Policy
 
-_Last updated: 11 June 2025_
+_Last updated: 1 July 2025_
 
 ## 1. Verantwortlicher / Data Controller  
-MyApp UG (haftungsbeschränkt)  
-Musterstraße 1, 12345 Berlin, Germany  
-privacy@myapp.example
+🟡 YourApp UG (haftungsbeschränkt)  
+🟡 Musterstraße 1, 12345 Berlin, Germany  
+privacy@yourapp.example
 
-## 2. Zweck & Rechtsgrundlagen (Art. 6 DSGVO)
+## 2. Zwecke & Rechtsgrundlagen
 
-| Zweck                                     | Datenkategorien                                      | Rechtsgrundlage |
-|-------------------------------------------|------------------------------------------------------|-----------------|
-| Betrieb Ihres Nutzerkontos & Chats        | username, E-Mail, Passwort-Hash, Chat-Nachrichten    | Vertrag Art. 6 (1)(b) |
-| Sicherheits- & Betrugsprävention          | verkürzte IP, Fingerprint-Hash, Verification Codes   | Berechtigtes Interesse Art. 6 (1)(f) |
-| Crash- & Nutzungsstatistik (optional)     | pseudonyme IDs, Geräte-Infos                         | Einwilligung Art. 6 (1)(a) |
-| Newsletter (optional)                     | E-Mail, Öffnungs-/Klick-Events                       | Einwilligung Art. 6 (1)(a) |
-| Buchhaltung / Steuer                      | Name, Adresse, Stripe-ID (bei Abo)                   | Gesetzliche Pflicht Art. 6 (1)(c) |
+| Zweck / Activity | Datenkategorien | Rechtsgrundlage |
+|------------------|-----------------|-----------------|
+| **Betrieb Ihres Nutzerkontos & Chats** | Name, E-Mail, Passwort-Hash, Profilbilder, Chat-Nachrichten, Eisbrecher-Antworten | Vertrag Art. 6 (1)(b) |
+| **Freiwillige Profilangaben** (Religion, politische Ansicht) | Religion, Politik | Einwilligung Art. 6 (1)(a) i. V. m. Art. 9 (2)(a) |
+| **Standort-basiertes Matching** (optional) | Geokoordinaten (Breite/Länge), Radius | Einwilligung Art. 6 (1)(a) |
+| **Sicherheits- & Betrugsprävention** | verkürzte IP, Fingerprint-Hash, Verification-Tokens | Berechtigtes Interesse Art. 6 (1)(f) |
+| **Crash- & Nutzungsstatistik** (optional) | pseudonyme Geräte-ID, Stack-Trace, App-Events | Einwilligung Art. 6 (1)(a) |
+| **Newsletter / Produkt-Mails** (optional) | E-Mail, Öffnungs- / Klick-Events | Einwilligung Art. 6 (1)(a) |
+| **Buchhaltung & Steuer** | Name, Adresse, Stripe-ID (bei Abo) | Gesetzliche Pflicht Art. 6 (1)(c) |
 
 ## 3. Weitergabe an Dritte  
-AWS eu-central-1 (Hosting), Google Ireland Ltd. (Firebase, _nur bei Einwilligung_),  
-SendGrid (Newsletter, _nur bei Einwilligung_).  
-**Kein** Transfer in Drittstaaten ohne angemessenen Schutzmechanismus (SCC).
+AWS (EU-Central, Hosting), Google Ireland Ltd. (Firebase Crashlytics _bei Einwilligung_),  
+SendGrid (Newsletter _bei Einwilligung_), Stripe (Payment, gemeinsamer Verantwortlicher).  
+**Kein** Drittland-Transfer ohne geeignete Garantien (Standard­vertrags­klauseln).
 
 ## 4. Speicherdauer  
-Wir löschen Account-Daten spätestens 30 Tage nach Kontolöschung,  
-Rechnungsdaten nach 10 Jahren (§ 147 AO).
+Profil- & Chat-Daten: Löschung spätestens 30 Tage nach Account-Löschung.  
+Rechnungs- / Steuerdaten: 10 Jahre (§ 147 AO).
 
 ## 5. Ihre Rechte  
-Auskunft, Berichtigung, Löschung, Datenportabilität, Widerspruch, Beschwerde bei der Berliner Aufsichtsbehörde.
+Auskunft, Berichtigung, Löschung, Daten­portabilität, Widerruf, Beschwerde bei der Berliner Aufsichts­behörde.
 
 ## 6. Einwilligung & Widerruf  
-Analyse- und Newsletter-Tracking erfolgen **nur** nach aktiver Zustimmung.  
-Ein Widerruf ist jederzeit in der App unter _Einstellungen → Datenschutz_ möglich.
+Standort, sensible Profilfelder, Analyse- und Newsletter-Tracking verarbeiten wir **nur** nach aktiver Zustimmung.  
+Widerruf jederzeit in _Einstellungen → Datenschutz_.
 
 ## 7. Sicherheit  
-TLS 1.3, Passwort-Hashing mit Argon2id, Zugriff nur per IAM-Roles.
+TLS 1.3, Passwort-Hash Argon2id + Salt, Verschlüsselung-at-Rest, Zugriff nur via IAM-Rollen.
 
 ## 8. Änderungen  
-Diese Erklärung wird bei Funktions- oder Gesetzesänderungen aktualisiert.
-
+Diese Erklärung wird bei Funktions- oder Gesetzes­änderungen aktualisiert.
 ```
 
-2 impressum.md
-```
+---
+
+## 2 · `impressum.md` _(unchanged except for placeholders)_
+
+```markdown
 # Impressum
 
 Angaben gemäß § 5 TMG / § 18 MStV  
 
-**MyApp UG (haftungsbeschränkt)**  
-Musterstraße 1  
+**🟡 YourApp UG (haftungsbeschränkt)**  
+🟡 Musterstraße 1  
 12345 Berlin  
 Deutschland
 
-Handelsregister: HRB 123456 (Berlin Charlottenburg)  
-Geschäftsführer: Max Mustermann  
-USt-IdNr.: DE123456789
+Handelsregister: HRB 🟡 (Bezirksgericht Berlin-Charlottenburg)  
+Geschäftsführer: 🟡 Max Mustermann  
+USt-IdNr.: 🟡 DE …  
 
 Kontakt:  
-Tel.: +49 30 1234567  
-E-Mail: info@myapp.example
+Tel.: +49 30 🟡  
+E-Mail: info@yourapp.example
 
-Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:  
-Max Mustermann, Anschrift wie oben.
+Verantwortlich i.S.d. § 18 Abs. 2 MStV:  
+🟡 Max Mustermann, Anschrift wie oben.
 
-EU-Streitschlichtung: https://ec.europa.eu/consumers/odr  
-Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-
+EU-Streitbeilegung: <https://ec.europa.eu/consumers/odr>  
+Wir nehmen nicht an Streitbeilegungs­verfahren vor einer Verbraucher­schlichtungs­stelle teil.
 ```
 
 ---
 
-## 3 Flutter – Link in Onboarding
-```
-// Inside your onboarding screen
-RichText(
-  text: TextSpan(
-    style: Theme.of(context).textTheme.bodySmall,
-    children: [
-      const TextSpan(text: 'Durch die Registrierung akzeptierst du unsere '),
-      TextSpan(
-        text: 'Datenschutzerklärung',
-        style: const TextStyle(decoration: TextDecoration.underline),
-        recognizer: TapGestureRecognizer()
-          ..onTap = () => launchUrl(Uri.parse('https://myapp.example/privacy')),
-      ),
-      const TextSpan(text: ' und das '),
-      TextSpan(
-        text: 'Impressum',
-        style: const TextStyle(decoration: TextDecoration.underline),
-        recognizer: TapGestureRecognizer()
-          ..onTap = () => launchUrl(Uri.parse('https://myapp.example/impressum')),
-      ),
-      const TextSpan(text: '.'),
-    ],
-  ),
-);
+## 3 · Flutter onboarding links
 
+_(URLs bleiben gleich; Datei-Namen änderten sich nicht)_
+
+```dart
+// ... inside onboarding screen
+TextSpan(
+  text: 'Datenschutzerklärung',
+  recognizer: TapGestureRecognizer()
+    ..onTap = () => launchUrl(Uri.parse('https://yourapp.example/privacy')),
+),
+...
 ```
 
-4 PHP route (static file)
-```
-// routes.php
+---
+
+## 4 · PHP routes (static)
+
+```php
 $app->get('/privacy', fn() => readfile(__DIR__.'/legal/privacy_policy.md'));
 $app->get('/impressum', fn() => readfile(__DIR__.'/legal/impressum.md'));
 ```
 
-5 Google Play “Data-Safety” quick answers
-### 5 · Google Play “Data-Safety” quick answers  (example for your app)
-
-| Question in the Play - Console | Your answer | Notes / why |
-|--------------------------------|-------------|-------------|
-| Does the app **collect** or **share** personal data? | **Yes – collect** | The moment you create a user profile, you “collect”. |
-| Is all user data **encrypted in transit**? | **Yes** | Your API is behind HTTPS/TLS 1.3. |
-| Do you provide a way to **request deletion**? | **Yes** | Settings → Privacy → Delete account (GDPR Art. 17). |
-| Data **shared** with third parties | **None** | Processors (AWS, SendGrid, Firebase) count as “collected”, not “shared”. |
-| Types of data **collected** | **Personal Info → Name, E-mail**<br>**Messages**<br>**Identifiers → User ID**<br>**App Activity (optional)** | Tick “Analytics” only if user gave consent. |
-| Purpose of collection | **App functionality** (all mandatory fields)<br>**Analytics** (optional) | Match what you describe in the Privacy Policy. |
-| Data deletion policy | “Users can delete their account in-app; personal data is erased from production within 30 days, backups after 30 days more.” | This text must match the real retention logic. |
-
-> **Tip:** Keep a screenshot of every answer you give. If Google flags the listing later, you can prove what you declared.
-
 ---
 
-## 6 · Checklist for submitting the Privacy-Policy & Data-Safety info
+## 5 · Google Play “Data-Safety” – updated cheat-sheet
 
-|Step|Where|Action|
+|Console question|Your answer|Notes|
 |---|---|---|
-|1|**App content → Privacy Policy**|Paste `https://myapp.example/privacy`|
-|2|**App content → Data-safety**|Walk through the wizard using the table above|
-|3|**Store listing → Contact details**|Add the Impressum URL in “Website”|
-|4|**App releases → Testing → Production testing**|Upload the AAB + sign Data-safety form|
-|5|**Publishing overview**|Fix any “Policy issue” warnings before requesting review|
+|Does the app collect / share personal data?|**Yes – collect**|Profile & chat data.|
+|All data encrypted in transit?|**Yes**|TLS 1.3.|
+|Deletion request available?|**Yes**|Settings → Privacy → Delete Account.|
+|Data **shared** with third parties|**None**|AWS, SendGrid etc. = processors (≠ shared).|
+|**Collected** data types|• Personal Info → Name, E-mail• Messages• Identifiers → User ID• **Sensitive Info → Religion / Political Beliefs** (opt-in)• **Location** (opt-in)• App Activity (Analytics, opt-in)|Tick only optional items if user gave consent.|
+|Purpose|**App functionality** (mandatory)**Analytics** (optional)|Keep wording consistent with policy.|
+|Data-deletion policy|“Users can delete account in-app; data purged from prod ≤ 30 days, backups ≤ 60 days.”|Match real retention logic.|
 
-Google usually reviews the **Data-Safety form** together with your first public release. First-time review can take 3-7 days.
+_Take a screenshot of each answer for audit trails._
 
 ---
 
-## 7 · Generating HTML from your Markdown files (optional)
+## 6 · Submission checklist (unchanged)
 
-If you want to auto-publish the Markdown files as static HTML on deploy, a one-liner in your CI works:
+1. **App content → Privacy Policy** – paste `https://yourapp.example/privacy`
+    
+2. **App content → Data-safety** – fill wizard with table above
+    
+3. **Store listing → Contact details** – set Impressum URL
+    
+4. **Releases → Testing → Production testing** – upload AAB, sign form
+    
+5. Resolve any “Policy issue” before review
+    
+
+---
+
+## 7 · Markdown → HTML one-liner (CI)
 
 ```bash
-# convert.sh
-pandoc legal/privacy_policy.md -o public/privacy.html --metadata title="Privacy Policy"
+pandoc legal/privacy_policy.md -o public/privacy.html   --metadata title="Privacy Policy"
 pandoc legal/impressum.md       -o public/impressum.html --metadata title="Impressum"
 ```
 
-Add `./convert.sh` to your build pipeline (GitHub Actions, GitLab CI, etc.), commit the generated `public/*.html`, and point the Play-Store URLs at the HTML versions. Google doesn’t care whether the file ends in `.html`, `.md`, or no extension—as long as it responds with plain text/HTML.
+---
+
+## 8 · “Safety belt” rollout (same steps)
+
+1. Internal track (≤ 100) → consent flow sanity-check
+    
+2. Closed / Production testing (500–2 000)
+    
+3. Gradual 5 % rollout, monitor crashes & ANRs
+    
+4. Legal spot-check: first real deletion ⇒ verify purge worker
+    
 
 ---
 
-## 8 · Release “safety belt” before going live
-
-1. **Internal testing track (max 100 users)** – sanity-check consent flow.
-    
-2. **Closed testing / Production testing** – add 500–2 000 selected users; counts as “published” for investors.
-    
-3. **Rollout by percentage** – in Production, start at 5 % of countries ⇒ watch Crashlytics & ANRs.
-    
-4. **Legal spot-check** – once the first real users delete their account, verify the purge job ran.
-    
-
----
+**That’s it – all pieces now reflect your current schema (sensitive bubbles, geo-matching, consent flags).**  
+If you want a ready-made ZIP with both Markdown files or more Play-Console screenshots, just holler!

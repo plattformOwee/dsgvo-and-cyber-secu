@@ -5,6 +5,15 @@ to find out if port is used: sudo ss -tlnp | grep :3000
 cd realtime-game
 nano socket.js > look at socket.js file 
 node socket.js > start in terminal
+
+#### new server
+ssh root@v32582.1blu.de
+
+mongosh --tls \
+  --tlsCAFile /etc/ssl/ca.pem \
+  --tlsCertificateKeyFile /etc/ssl/mongo-client.pem \
+  'mongodb://admin:lwp8uB!b@127.0.0.1:27017/admin?authSource=admin'
+
 ##### pm2
 npm install -g pm2
 pm2 start server.js --name realtime-game

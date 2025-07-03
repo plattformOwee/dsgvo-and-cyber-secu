@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "37b54005a0d5a501",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fix swipe_chat_play.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "fix swipe_chat_play"
+            }
+          },
+          {
             "id": "2df1d66895cbed28",
             "type": "leaf",
             "state": {
@@ -36,35 +50,49 @@
             }
           },
           {
-            "id": "3baaaa006e193a76",
+            "id": "12d755404c588da1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cyber security.md",
+                "file": "User-Rights-API.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cyber security"
+              "title": "User-Rights-API"
             }
           },
           {
-            "id": "e3081039d68c3b94",
+            "id": "7b3734a75caf0200",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "nachricht an gerd.md",
+                "file": "DSGVO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nachricht an gerd"
+              "title": "DSGVO"
+            }
+          },
+          {
+            "id": "b662fa1420be1fdf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "User-Rights-API.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "User-Rights-API"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -156,12 +184,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cyber security.md",
+                "file": "User-Rights-API.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from cyber security"
+              "title": "Outgoing links from User-Rights-API"
             }
           },
           {
@@ -224,33 +252,33 @@
   },
   "active": "2df1d66895cbed28",
   "lastOpenFiles": [
-    "cyber security.md",
+    "User-Rights-API.md",
     "woven what is to do.md",
+    "DSGVO.md",
+    "fix swipe_chat_play.md",
+    "commands and files that have worked.md",
+    "Untitled 81.md",
+    "Privacy Policy und Impressum.md",
+    "Rechtsgrundlage festlegen.md",
+    "RoPA woven.md",
+    "Untitled 80.md",
+    "swipe_chat_play project doc.md",
+    "nachricht an jeel datta.md",
+    "TODO OP.md",
+    "Datenminimierung & Security.md",
+    "cyber security.md",
+    "Untitled 79.md",
     "nachricht an gerd.md",
     "Gründungsurkunde und Gesellschaftsvertrag.md",
     "Untitled 78.md",
-    "commands and files that have worked.md",
     "Breach-Process.md",
-    "DSGVO.md",
     "todo today.md",
     "nachricht an karo.md",
     "Untitled 77.md",
     "y combinator.md",
     "nachricht an sebastian welp.md",
     "vorgehen anmeldung.md",
-    "todo 17.06.md",
-    "channel list youtube.md",
-    "Auftragsverarbeitung.md",
-    "Datenminimierung & Security.md",
-    "User-Rights-API.md",
-    "crashlytics.md",
-    "Privacy Policy und Impressum.md",
-    "Rechtsgrundlage festlegen.md",
-    "RoPA woven.md",
-    "2025-06-11.md",
-    "swipe_chat_play project doc.md",
     "Untitled 1.canvas",
-    "Untitled 76.md",
     "login_signup flow.canvas",
     "direct lending.canvas",
     "app.canvas",

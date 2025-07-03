@@ -141,6 +141,85 @@ This is the end goal profile structure (model after what frontend wants + hidden
 	  fingerprint_hash: '$2y$10$eoEopqwq3ZtyePlBmpP8e.yHN2QQrsl2VGqqt9TrztElBT6aFXS5.',
 }
 
+##### Real one:
+{
+    _id: ObjectId('6864041e23e0a7fe430c1f55'),
+    profile: {
+      topSection: {
+        profileImages: [
+          'http://panel.krasserserver.com:8002/swipe_chatt_play_api/create_profile/uploads/681e16dd46f02_image_cropper_1746802394567.jpg'
+        ],
+        name: 'taylor911',
+        age: 21,
+        infoBubbles: {
+          gender: 'Transgender',
+          languages: [ 'French', 'Spanish' ],
+          religion: 'Judaism',
+          politics: 'Other'
+        }
+      },
+      elements: [
+        {
+          _id: ObjectId('6864041e23e0a7fe430c1f51'),
+          type: 'icebreaker',
+          content: {
+            question: 'Ein Ort, an den ich immer wieder zurückkehre…',
+            answer: 'Meine Heimatstadt – da fühle ich mich zuhause.'
+          }
+        },
+        {
+          _id: ObjectId('6864041e23e0a7fe430c1f53'),
+          type: 'question_and_inputfield',
+          content: {
+            question: 'Ein Ort, an den ich immer wieder zurückkehre…',
+            answer: ''
+          }
+        },
+        {
+          _id: ObjectId('6864041e23e0a7fe430c1f54'),
+          type: 'voicememo',
+          content: {
+            prompt: 'Say something about yourself',
+            link_voicemessage: 'http://panel.krasserserver.com:8002/swipe_chatt_play_api/chat/uploads/voicememos/sample_6864041e43d5c.aac'
+          }
+        },
+        {
+          _id: ObjectId('6864041e23e0a7fe430c1f52'),
+          type: 'bubbles',
+          content: {
+            title: 'Open to',
+            bubbles: [ 'yoga', 'puzzles', 'painting', 'biking' ]
+          }
+        }
+      ]
+    },
+    search_filter: {
+      location_radius: {
+        location: {
+          type: 'Point',
+          coordinates: [ 5.09076385243628, 33.90247756093561 ]
+        },
+        radius: 92
+      },
+      searching_for: {
+        genders: [ 'Female', 'Male', 'Other' ],
+        ageRange: [ 18, 120 ],
+        religion: [ 'Hinduism', 'Christianity' ],
+        politics: [ 'Socialist' ]
+      },
+      open_to: [ 'yoga', 'puzzles', 'painting', 'biking' ]
+    },
+    userdata: {
+      email: 'taylor911@example.com',
+      password_hash: '$2y$10$xf/Q1XW7YX6q1YnaCuOR6.VkoocYIxVm51ThfYTxTAG.YRhVLXnqq',
+      verification_code: null,
+      verification_code_expiry: null,
+      is_verified: true,
+      fingerprint_hash: '$2y$10$ZV0EjTRNwYva1pTmrI2gsuTnupXAHOGQc8PfudwhO8jDGL5uAVzku'
+    }
+  },
+"
+
 - [x] test to make new "get_profile.php" which gets this profile and echos in correct way for ViewMyProfile
 	- [x] the json that the frontend wants:
 		- [ ] [[[expected json viemyprofile]]]

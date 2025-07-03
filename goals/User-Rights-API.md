@@ -90,13 +90,13 @@ $app->post('/v1/me/delete', function() use ($db, $userId) {
 
 ## 3 Was muss ins **Export-Paket**?
 
-|Kategorie|Beispielinhalt|
-|---|---|
-|Profildaten|username, firstname, lastname, e-mail, created_at, is_verified|
-|Einstellungen / Consents|consents.analytics, consents.newsletter|
-|Gerätedaten (falls vorhanden)|fingerprint_hash, letzte Login-IP (gekürzt)|
-|Inhalte|alle Chatnachrichten **des Nutzers** (eigene Messages)|
-|Metadaten|JSON-Schema-Version, Exportzeitstempel|
+| Kategorie                     | Beispielinhalt                                                 |
+| ----------------------------- | -------------------------------------------------------------- |
+| Profildaten                   | username, firstname, lastname, e-mail, created_at, is_verified |
+| Einstellungen / Consents      | consents.analytics, consents.newsletter                        |
+| Gerätedaten (falls vorhanden) | fingerprint_hash, letzte Login-IP (gekürzt)                    |
+| Inhalte                       | alle Chatnachrichten **des Nutzers** (eigene Messages)         |
+| Metadaten                     | JSON-Schema-Version, Exportzeitstempel                         |
 
 > **Fremde Daten** (Nachrichten deiner Gesprächspartner) gehören **nicht** zwingend ins Export-Zip; gib nur das zurück, was „sich auf die betroffene Person bezieht“. Praktisch übermittelst du meist die **ganzen Konversationen**, weil der Text des Anderen mitgespeichert ist. Das wird allgemein akzeptiert, sofern die Daten ausschließlich dem Anforderer bereitgestellt werden.
 
