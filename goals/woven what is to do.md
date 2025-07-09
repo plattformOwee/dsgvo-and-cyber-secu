@@ -1,28 +1,55 @@
 - [ ] [[DSGVO]]
 	- [ ] dateninventur & RoPA (denke verarbeitungsverzeichnis) [[RoPA woven]]
+		- [ ] checken ob alle dinge die hier mit einwilligung begründed sind wirklich in den AGBs ist 
+		- [ ] checken ob die RoPA wirklich alle felder die es gibt nennt
 	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]]
 	- [ ] [[Privacy Policy und Impressum]]
 	- [ ] [[crashlytics]]
 	- [ ] [[User-Rights-API]] 
 		- [ ] delete_me.php
-			- [ ] script exists and works by recording the request
-			- [ ] + a script to look each night for users to delete cron job
-				- [ ] sudo nano /var/www/woven/scripts/cleanup_delete_requests.php
-				- [ ] sudo tail -n 20 /var/www/woven/logs/cleanup.log
+			- [x] script exists and works by recording the request
+			- [x] + a script to look each night for users to delete cron job
+				- [x] sudo nano /var/www/woven/scripts/cleanup_delete_requests.php
+				- [x] sudo tail -n 20 /var/www/woven/logs/cleanup.log
+			- [ ] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
 		- [ ] request_me.php
+			- [x] umgeschrieben benutzt kein aws s3 mehr
+			- [x] cron job gemacht der die page jeweils nach 24 stunden immer löscht cleanup_exports.sh
+			- [ ] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
+				- [ ] mal passwort in login und signup flow integrieren lul
+			- [ ] checken ob hierin alle "export page" nötigen dinge drin sind (#3)
+		- [ ] von #5 privacy policy abschnitt schauen, dass er wirklich in der privacy policy is
+		- [ ] vojn #4 schauen das die sicherheit gewährt ist
+			- [ ] rate limit (DoS)
+			- [ ] re auth prompt
+			- [ ] download url nur 24 h gültig
+			- [ ] | **2-Man-Rule für Admin-Löschung**       | Wenn Ops manuell eingreifen muss    kp nochnal chatgpt fragen 
 	- [ ] [[Datenminimierung & Security]]
 	- [ ] [[Auftragsverarbeitung]]
 	- [ ] [[Breach-Process]]
+	- [ ] [[unterschied zwischen RoPa und rechtsgrundlage festlegen]]
 	- [ ] [[encrypt as much as possible]]
 - [ ] [[cyber security]]
-	- [ ] http > https
+	- [x] http > https
+	- [ ] encryption
+		- [ ] encrypt in transit TLS SSL
+			- [ ] prüfen ob es bei allen services der fall ist
+				- [ ] mongodb
+				- [ ] php
+				- [ ] https idk
+		- [ ] encrypt at rest
+			- [ ] find out what that even mean
+		- [ ] 
 - [ ] y-combinator bewerbung
 	- [ ] braune haarfarbe kaufen haare anders machen mit hellen spitzen 
 	- [ ] linked-in profil machen
 	- [ ] bewerben
 - [ ] firmenanmeldung
 	- [ ] geld
+	- [ ] beglaubigt.de
 	- [ ] [[Gründungsurkunde und Gesellschaftsvertrag]]
+- [ ] Marke sichern
+	- [ ] [[bestehende woven marke revoken]]
 
 - [x] neuen signup flow
 - [x] xd signup flow designen mit erklärungen und so dazwischen

@@ -104,12 +104,13 @@ $app->post('/v1/me/delete', function() use ($db, $userId) {
 
 ## 4 Sicherheit & Missbrauchsschutz
 
-|Maßnahme|Warum|
-|---|---|
-|**Re-auth-Prompt** vor Delete/Export|Verhindert, dass ein entwendetes Handy den Account löscht|
-|**Rate-Limit** (z. B. max 1 Export/Tag)|DoS verhindern|
-|**Download-URL nur 24 h gültig**|Minimiert Leck-Risiko|
-|**2-Man-Rule für Admin-Löschung**|Wenn Ops manuell eingreifen muss|
+| Maßnahme                                | Warum                                                     |
+| --------------------------------------- | --------------------------------------------------------- |
+| **Re-auth-Prompt** vor Delete/Export    | Verhindert, dass ein entwendetes Handy den Account löscht |
+| **Rate-Limit** (z. B. max 1 Export/Tag) | DoS verhindern                                            |
+| **Download-URL nur 24 h gültig**        | Minimiert Leck-Risiko                                     |
+| **2-Man-Rule für Admin-Löschung**       | Wenn Ops manuell eingreifen muss                          |
+
 
 ---
 

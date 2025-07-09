@@ -1,0 +1,18 @@
+- [ ] firmenanmeldung
+	- [x] notare vergleichen
+	- [ ] ~~dokumente von owee zu woven umschreiben~~
+	- [x] nachsehen wie man nen profit sharing vertrag macht
+		- [ ] https://chatgpt.com/share/686d4548-2dc0-8002-8ce2-fd57196a74c2
+		- [ ] [[geht auch nach fertiger eintragung und davor ist ein Vorgründungsvertrag möglich sobald er sich meldet können also zusicherungen gemacht werden]]
+	- [ ] notar kontaktieren termin ausmachen
+	- [ ] geld besorgen für notar termin
+- [ ] termin für namensänderung und outing im chat an alle
+- [ ] DSGVO
+	- [ ] password undso in login signup rein
+	- [ ] rechtsgrundlage festlegen steps
+	- [ ] user rights api überarbeiten 
+	- [ ] alle dokumente an die richtige stelle und an alles und einander anpassen
+	- [ ] checken was für google play veröffentlichung notwendig ist
+- [ ] app
+	- [ ] rework login signup flow to encorperate both password creation and device auth 
+	- [ ] also ask for either device auth or password when user is deleting or requesting the data
