@@ -1,0 +1,18 @@
+- signup flow
+	- ChooseMethodScreen > AGB's und Impressum hinzufügen (gleiches bei login version)
+	- email_page > email and password page
+	- verify_code > add device auth question
+	- either create code or add device auth
+	- name page
+	- genderpage
+	- langauge page
+	- age page
+	- searching for page
+	- EnableLocationPage > add other consents ([[Rechtsgrundlage festlegen]])  dialogs for data privacy and everything
+	- DatingRadiusPage2
+	- Motivation page
+	- ReligionPage
+	- PoliticsPage
+	- ProfileImagesPage
+	- AddElementPage
+	- kRouteHome / MainPage2

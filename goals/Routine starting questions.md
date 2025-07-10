@@ -1,0 +1,8 @@
+- [ ] text people
+	- [ ] for what goals could somebody be helpful?
+	- [ ] just list from head if possible
+- [ ] administrive tasks open? 
+- [ ] app features need designing
+- [ ] app features need expanding
+- [ ] app features revisione 
+- [ ] etc
