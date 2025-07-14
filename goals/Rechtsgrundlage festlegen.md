@@ -1,3 +1,41 @@
+# neue aufgaben 
+grant: 
+### 3.1 Rectification endpoint (`rectify_me.php`)
+
+- **Authenticate** with the same JWT + device_auth/password flow.
+    
+- **Accept** a JSON body with the fields to correct (e.g. `profile.firstName`, `search_filter.ageRange`).
+    
+- **Use** `BulkWrite->update()` on the users collection to apply the changes.
+    
+- **Return** `200 OK` with the updated document or a confirmation message.  
+    [GDPR](https://gdpr-info.eu/art-16-gdpr/?utm_source=chatgpt.com)[Homepage | Data Protection Commission](https://www.dataprotection.ie/en/individuals/know-your-rights/right-rectification?utm_source=chatgpt.com)
+    
+
+### 3.2 Restriction endpoint (`restrict_me.php`)
+- **Authenticate** the user.
+    
+- **Set** a flag, e.g. `processing_restricted_at: new BSON\UTCDateTime()`, on their MongoDB document.
+    
+- **Ensure** your business logic checks this flag and suspends all non-essential processing.
+    
+- **Return** `200 OK` with the restriction timestamp.  
+    [GDPR](https://gdpr-info.eu/art-18-gdpr/?utm_source=chatgpt.com)[GDPR.eu](https://gdpr.eu/article-18-right-to-restriction-of-processing/?utm_source=chatgpt.com)
+    
+
+### 3.3 Objection endpoint (`object_me.php`)
+- **Authenticate** the user.
+    
+- **Accept** a parameter indicating the purpose (e.g. `"marketing"`, `"profiling"`).
+    
+- **Store** a sub-field like `objections.marketing = new BSON\UTCDateTime()`.
+    
+- **Adjust** downstream services (e.g. mailer) to skip any processing for that purpose.
+    
+- **Return** `200 OK` with the purpose objected and timestamp.
+
+
+
 # new
 ## Praxis-Mapping Art. 6 / Art. 9 DSGVO – **neues Datenmodell**
 

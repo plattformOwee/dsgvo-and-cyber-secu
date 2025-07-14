@@ -3,6 +3,14 @@
 		- [ ] checken ob alle dinge die hier mit einwilligung begründed sind wirklich in den AGBs ist 
 		- [ ] checken ob die RoPA wirklich alle felder die es gibt nennt
 	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]]
+		- [ ] checken ob es alle consent flags von hier wirklich gibt in app
+			- [ ] funktionell
+			- [ ] gespeichert auf server
+		- [ ] checken ob ob die consent felder in den anderen dokumenten also die neue profil struktur beachtet ist
+		- [ ] checken das die neuen privacy policy abschnitte dementsprechend da sind
+		- [ ] rectification
+		- [ ] objection
+		- [ ] Restriction
 	- [ ] [[Privacy Policy und Impressum]]
 	- [ ] [[crashlytics]]
 	- [ ] [[User-Rights-API]] 
@@ -14,7 +22,7 @@
 			- [ ] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
 		- [ ] request_me.php
 			- [x] umgeschrieben benutzt kein aws s3 mehr
-			- [x] cron job gemacht der die page jeweils nach 24 stunden immer löscht cleanup_exports.sh
+			- [x] cron job gemacht der die page jeweils nach 24 stunden immer löscht cleanup_exports.sh 
 			- [ ] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
 				- [ ] mal passwort in login und signup flow integrieren lul
 			- [ ] checken ob hierin alle "export page" nötigen dinge drin sind (#3)
@@ -29,6 +37,8 @@
 	- [ ] [[Breach-Process]]
 	- [ ] [[unterschied zwischen RoPa und rechtsgrundlage festlegen]]
 	- [ ] [[encrypt as much as possible]]
+
+
 - [ ] [[cyber security]]
 	- [x] http > https
 	- [ ] encryption
@@ -39,11 +49,13 @@
 				- [ ] https idk
 		- [ ] encrypt at rest
 			- [ ] find out what that even mean
-		- [ ] 
+
+
 - [ ] y-combinator bewerbung
 	- [ ] braune haarfarbe kaufen haare anders machen mit hellen spitzen 
 	- [ ] linked-in profil machen
 	- [ ] bewerben
+
 
 - [ ] firmenanmeldung
 	- [x] geld
@@ -52,13 +64,18 @@
 	- [ ] notar termin
 	- [ ] handelsregister eintragung
 	- [ ] google pay signup
+
+
 - [ ] Marke sichern
 	- [ ] [[bestehende woven marke revoken]]
+
+
 - [ ] App
 	- [ ] weniger weiß
 		- [ ] dickere schrift
 	- [ ] unterschiedliche bild größen  und bilder verteilt durchs profiel
 	- [x] ChooseMethodScreen > AGB's und Impressum hinzufügen (gleiches bei login version)
+
 
 - [x] neuen signup flow
 - [x] xd signup flow designen mit erklärungen und so dazwischen

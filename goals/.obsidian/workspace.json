@@ -22,21 +22,7 @@
             }
           },
           {
-            "id": "b627af7e9a23a730",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled 84.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled 84"
-            }
-          },
-          {
-            "id": "7607c87f2535b0da",
+            "id": "5b70cc354613f261",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,20 +36,21 @@
             }
           },
           {
-            "id": "6757e7625c51819e",
+            "id": "d574c0067b91a7fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Document every thing i touch from now on.md",
+                "file": "Rechtsgrundlage festlegen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Document every thing i touch from now on"
+              "title": "Rechtsgrundlage festlegen"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -221,21 +208,24 @@
       "smart-gantt:Smart Gantt": false
     }
   },
-  "active": "c76abf4f4aa24dfe",
+  "active": "5b70cc354613f261",
   "lastOpenFiles": [
-    "Untitled 84.md",
     "voven what is to do.md",
+    "Rechtsgrundlage festlegen.md",
+    "RoPA woven.md",
+    "User-Rights-API.md",
+    "Untitled 86.md",
+    "DSGVO.md",
+    "Document every thing i touch from now on.md",
+    "commands and files that have worked.md",
+    "Untitled 85.md",
+    "Untitled 84.md",
     "Swipe_chat_play.md",
     "Untitled 81.md",
-    "commands and files that have worked.md",
     "Untitled 83.md",
-    "Document every thing i touch from now on.md",
-    "DSGVO.md",
     "Privacy Policy und Impressum.md",
     "Routine starting questions.md",
     "Todo now 2.md",
-    "RoPA woven.md",
-    "Rechtsgrundlage festlegen.md",
     "todo now.md",
     "cyber security.md",
     "unterschied zwischen RoPa und rechtsgrundlage festlegen.md",
@@ -246,9 +236,6 @@
     "Auftragsverarbeitung.md",
     "Datenminimierung & Security.md",
     "Gründungsurkunde und Gesellschaftsvertrag.md",
-    "geht auch nach fertiger eintragung und davor ist ein Vorgründungsvertrag möglich sobald er sich meldet können also zusicherungen gemacht werden.md",
-    "User-Rights-API.md",
-    "crashlytics.md",
     "Untitled 1.canvas",
     "login_signup flow.canvas",
     "direct lending.canvas",
