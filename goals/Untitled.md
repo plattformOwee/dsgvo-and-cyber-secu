@@ -1,358 +1,438 @@
-from flask import Flask, request, jsonify, render_template
-
-import requests
-
-import json
-
-  
-
-app = Flask(__name__)
-
-  
-
-@app.route('/')
-
-def index():
-
-    return render_template('index.html')
-
-  
-
-def ChangeJSON():
-
-    print("changejson started")
-
-    # Load the JSON data from the file
-
-    file_path = r"C:\xampp\htdocs\newfromtemplaterresponse.json"
-
-    writepath = r"C:\xampp\htdocs\newfromtemplaterresponsenew.json"
-
-    with open(file_path, 'r') as file:
-
-        data = json.load(file)
-
-  
-
-    # Update the global delivery_method
-
-    data["delivery_method"] = "api"  # Change delivery method to "api"
-
-  
-
-    # Update the delivery_method for party 2 and party 3 to "api"
-
-    party2 = data["parties"][1]  # Index 1 for the second party
-
-    party3 = data["parties"][2]  # Index 2 for the third party
-
-  
-
-    party2["delivery_method"] = "api"  # Set delivery method to "api" for party2
-
-    party3["delivery_method"] = "api"  # Set delivery method to "api" for party3
-
-  
-
-    # Update the fields for party2
-
-    for field in party2["fields"]:
-
-        if field["type"] == "name":
-
-            if field["order"] == 1:
-
-                field["value"] = "Zacharias"  # Set first name for party2
-
-            elif field["order"] == 2:
-
-                field["value"] = "Vogl"  # Set last name for party2
-
-        elif field["type"] == "email":
-
-            field["value"] = "luna@owee.io"  # Set email for party2
-
-  
-
-    # Update the fields for party3
-
-    for field in party3["fields"]:
-
-        if field["type"] == "name":
-
-            if field["order"] == 1:
-
-                field["value"] = "Lukas"  # Set first name for party3
-
-            elif field["order"] == 2:
-
-                field["value"] = "Schuster"  # Set last name for party3
-
-        elif field["type"] == "email":
-
-            field["value"] = "lukas@owee.io"  # Set email for party3
-
-  
-
-    # Set the same sign_success_redirect_url for each party
-
-    for party in data["parties"]:
-
-        party["sign_success_redirect_url"] = "https://fahrschule-peppermint.com/"
-
-  
-
-    # Save the modified data back to the file
-
-    with open(writepath, 'w') as file:
-
-        json.dump(data, file, indent=2)
-
-  
-
-    print("Delivery method, Party2, Party3 names and emails, and sign_success_redirect_url updated successfully.")
-
-  
-  
-
-def startSigning(document_id):
-
-    print("Starting the signing process...")
-
-  
-
-    # API URL to start the signing process
-
-    url = f"https://api-testbed.scrive.com/api/v2/documents/{document_id}/start"
-
-  
-
-    # Set the required headers including authorization
-
-    headers = {
-
-        'Authorization': 'oauth_signature_method="PLAINTEXT", oauth_consumer_key="70905cd9f94e77da_8036", oauth_token="adc612e3b83be957_34795", oauth_signature="0aab8ec0352747e5&d28efc845d128d91"',
-
-        'Content-Type': 'application/json',
-
-        'Cookie': 'lang="en"; lang-ssn="en"'
-
-    }
-
-  
-
-    # Make the POST request to start the signing process
-
-    response = requests.post(url, headers=headers)
-
-  
-
-    # Get JSON response
-
-    response_json = response.json()
-
-  
-
-    # Save the response to signstart.json
-
-    signstart_file_path = r"C:\xampp\htdocs\signstart.json"
-
-    with open(signstart_file_path, 'w') as json_file:
-
-        json.dump(response_json, json_file, indent=2)  # Pretty print JSON
-
-  
-  
-
-    print(f"Signing process started successfully. Response saved to {signstart_file_path}.")
-
-    [chatgpt:
-
-     "
-
-     load the api_delivery_url from the json
-
-     1. "with open(file_path, 'r') as file:
-
-        data = json.load(file)"]
-
-    2. party2 = data["parties"][1]  # Index 1 for the second party
-
-    party3 = data["parties"][2]
-
-    3. delivery_url1 = party2["api_delivery_url"] delivery_url2 = party3["api_delivery_url"]
-
-    4. save the two urls in two .json files
-
-    "
-
-    ]
-
-    # Return JSON response for further use
-
-    return response_json
-
-  
-
-def ConnectTheUser(api_deliver_url1, api_delivery_url2)
-
-    [chatgpt: "add code here to connect to flutter app and explain how"]
-
-  
-  
-  
-
-@app.route('/submit', methods=['POST'])
-
-def submit():
-
-    # Create Document from Template
-
-    url = "https://api-testbed.scrive.com/api/v2/documents/newfromtemplate/8222115557379851728/"
-
-    payload = {}
-
-    headers = {
-
-        'Authorization': 'oauth_signature_method="PLAINTEXT", oauth_consumer_key="70905cd9f94e77da_8036", oauth_token="adc612e3b83be957_34795", oauth_signature="0aab8ec0352747e5&d28efc845d128d91"',
-
-        'Cookie': 'lang="en"; lang-ssn="en"'
-
-    }
-
-    response = requests.post(url, headers=headers, data=payload)
-
-    response_json = response.json()  # Get JSON response
-
-  
-
-    # Save the value of "id" to id.txt
-
-    document_id = response_json.get("id")  # Extract "id" from the response
-
-    with open(r"C:\xampp\htdocs\id.txt", 'w') as id_file:
-
-        id_file.write(document_id)  # Save the document_id to a text file
-
-  
-
-    # Print the document_id
-
-    print("Document ID:", document_id)
-
-  
-
-    # Save response to a file
-
-    with open(r"C:\xampp\htdocs\newfromtemplaterresponse.txt", 'w') as txt_file:
-
-        txt_file.write(json.dumps(response_json, indent=2))  # Pretty print JSON
-
-  
-
-    # Save to newfromtemplaterresponse.json
-
-    with open(r"C:\xampp\htdocs\newfromtemplaterresponse.json", 'w') as json_file:
-
-        json.dump(response_json, json_file)
-
-  
-  
-
-    ChangeJSON()
-
-    # Now trigger the update_document function
-
-    update_response = update_document(document_id)
-
-  
-
-    # Return both responses
-
-    return jsonify({"create_response": response_json, "update_response": update_response})
-
-  
-  
-
-def update_document(document_id):
-
-    # API URL for the update
-
-    print("Updating document with ID:", document_id)
-
-    url = f"https://api-testbed.scrive.com/api/v2/documents/{document_id}/update"
-
-  
-
-    # Load the modified JSON from the newfromtemplaterresponsenew.json file
-
-    json_file_path = r"C:\xampp\htdocs\newfromtemplaterresponsenew.json"
-
-    with open(json_file_path, 'r') as json_file:
-
-        json_data = json.load(json_file)  # Load the JSON as a dictionary
-
-  
-
-    # Convert JSON to a string and properly escape it
-
-    json_string = json.dumps(json_data)  # Convert JSON to string
-
-  
-
-    # Create the payload in the correct format
-
-    payload = f'document={json_string}'
-
-  
-
-    # Set the required headers including authorization
-
-    headers = {
-
-        'Authorization': 'oauth_signature_method="PLAINTEXT", oauth_consumer_key="70905cd9f94e77da_8036", oauth_token="adc612e3b83be957_34795", oauth_signature="0aab8ec0352747e5&d28efc845d128d91"',
-
-        'Content-Type': 'application/x-www-form-urlencoded',  # URL-encoded form data format
-
-        'Cookie': 'lang="en"; lang-ssn="en"'
-
-    }
-
-  
-
-    # Make the POST request with the URL-encoded payload
-
-    response = requests.post(url, headers=headers, data=payload)  # Use 'data' for form-encoded data
-
-    # Get JSON response
-
-    response_json = response.json()
-
-  
-
-    # Save response to update_response.txt
-
-    with open(r"C:\xampp\htdocs\update_response.txt", 'w') as update_file:
-
-        update_file.write(json.dumps(response_json, indent=2))  # Pretty print JSON
-
-  
-
-    # Call startSigning and save the result as signstart.json
-
-    signing_response = startSigning(document_id)
-
-  
-
-    # Return both update response and signing response
-
-    return {"update_response": response_json, "signing_response": signing_response}
-
-  
-  
-  
-  
-
-if __name__ == '__main__':
-
-    app.run(debug=True)
+import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:local_auth/local_auth.dart';
+import 'package:http/http.dart' as http;
+import 'package:swipe_chat_play/config.dart'; // contains backendBaseUrl
+
+class SecurityPrivacyPage extends StatefulWidget {
+  const SecurityPrivacyPage({Key? key}) : super(key: key);
+
+  @override
+  State<SecurityPrivacyPage> createState() => _SecurityPrivacyPageState();
+}
+
+class _SecurityPrivacyPageState extends State<SecurityPrivacyPage> {
+  final _storage = const FlutterSecureStorage();
+  final _auth = LocalAuthentication();
+
+  Future<String?> _token() => _storage.read(key: 'jwt_token');
+  Future<String?> _deletionDate() => _storage.read(key: 'deletion_date');
+  Future<String?> _restrictionDate() => _storage.read(key: 'restriction_date');
+
+  void _snack(String msg) {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
+  }
+
+  Future<Map<String, String>?> _authenticate() async {
+    final jwt = await _token();
+    if (jwt == null) {
+      _snack('Please login first');
+      return null;
+    }
+
+    final methodsRes = await http.get(
+      Uri.parse('${Config.backendBaseUrl}/dsgvo/method.php'),
+      headers: {'Authorization': 'Bearer $jwt'},
+    );
+    if (methodsRes.statusCode != 200 || methodsRes.body.trim().isEmpty) {
+      _snack('Failed to fetch auth methods');
+      return null;
+    }
+
+    late final List<String> methods;
+    try {
+      final body = json.decode(methodsRes.body) as Map<String, dynamic>;
+      methods = (body['methods'] as List).cast<String>();
+    } on FormatException {
+      _snack('Invalid auth-methods response');
+      return null;
+    }
+
+    if (methods.contains('device_auth') && await _auth.canCheckBiometrics) {
+      final didAuth = await _auth.authenticate(
+        localizedReason: 'Authenticate to continue',
+      );
+      if (didAuth) {
+        return {
+          'X-Auth-Method': 'device_auth',
+          'X-Device-Auth': '1',
+        };
+      }
+    }
+
+    if (!mounted) return null;
+    final pwdCtrl = TextEditingController();
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Confirm with password'),
+        content: TextField(
+          controller: pwdCtrl,
+          obscureText: true,
+          decoration: const InputDecoration(labelText: 'Password'),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: const Text('Cancel')),
+          TextButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: const Text('OK')),
+        ],
+      ),
+    );
+    if (ok != true) return null;
+
+    return {
+      'X-Auth-Method': 'password',
+      'Content-Type': 'application/json',
+      'password': pwdCtrl.text,
+    };
+  }
+
+  Future<void> _showRestrictionConfirmation() async {
+    if (!mounted) return;
+
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Restrict Processing?'),
+        content: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+              Text('By restricting processing:'),
+              SizedBox(height: 8),
+              Text('• Your profile will be hidden from other users'),
+              Text('• You won\'t appear in any searches or matches'),
+              Text('• Existing matches can still message you'),
+              Text('• You can unrestrict processing at any time'),
+              SizedBox(height: 16),
+              Text('Do you want to continue?'),
+            ],
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context, false),
+            child: const Text('Abort'),
+          ),
+          TextButton(
+            onPressed: () => Navigator.pop(context, true),
+            child: const Text('Continue'),
+          ),
+        ],
+      ),
+    );
+
+    if (confirm == true) {
+      await _restrictMe();
+    }
+  }
+
+  Future<void> _restrictMe() async {
+    final jwt = await _token();
+    if (jwt == null) return _snack('Please login first');
+
+    final auth = await _authenticate();
+    if (auth == null) return;
+
+    final headers = {
+      'Authorization': 'Bearer $jwt',
+      'X-Auth-Method': auth['X-Auth-Method']!,
+    };
+    String? body;
+    if (auth['X-Auth-Method'] == 'device_auth') {
+      headers['X-Device-Auth'] = auth['X-Device-Auth']!;
+    } else {
+      headers['Content-Type'] = auth['Content-Type']!;
+      body = json.encode({'password': auth['password']});
+    }
+
+    final res = await http.post(
+      Uri.parse('${Config.backendBaseUrl}/dsgvo/restrict_me.php'),
+      headers: headers,
+      body: body,
+    );
+
+    if (res.statusCode == 200) {
+      late final Map<String, dynamic> resp;
+      try {
+        resp = json.decode(res.body) as Map<String, dynamic>;
+      } on FormatException {
+        return _snack('Server sent non-JSON response');
+      }
+      final restrictionDate = resp['restriction_date'] as String?;
+      if (restrictionDate != null) {
+        await _storage.write(key: 'restriction_date', value: restrictionDate);
+      }
+      _snack('Processing restricted');
+      if (mounted) setState(() {});
+    } else {
+      _snack('Restriction failed: HTTP ${res.statusCode}');
+    }
+  }
+
+  Future<void> _unrestrictMe() async {
+    final jwt = await _token();
+    if (jwt == null) return _snack('Please login first');
+
+    final auth = await _authenticate();
+    if (auth == null) return;
+
+    final headers = {
+      'Authorization': 'Bearer $jwt',
+      'X-Auth-Method': auth['X-Auth-Method']!,
+    };
+    String? body;
+    if (auth['X-Auth-Method'] == 'device_auth') {
+      headers['X-Device-Auth'] = auth['X-Device-Auth']!;
+    } else {
+      headers['Content-Type'] = auth['Content-Type']!;
+      body = json.encode({'password': auth['password']});
+    }
+
+    final res = await http.post(
+      Uri.parse('${Config.backendBaseUrl}/dsgvo/unrestrict_me.php'),
+      headers: headers,
+      body: body,
+    );
+
+    if (res.statusCode == 200) {
+      await _storage.delete(key: 'restriction_date');
+      _snack('Processing unrestricted');
+      if (mounted) setState(() {});
+    } else {
+      _snack('Unrestriction failed: HTTP ${res.statusCode}');
+    }
+  }
+
+  Future<void> _exportData() async {
+    final jwt = await _token();
+    if (jwt == null) return _snack('Please login first');
+
+    final auth = await _authenticate();
+    if (auth == null) return;
+
+    final headers = {
+      'Authorization': 'Bearer $jwt',
+      'X-Auth-Method': auth['X-Auth-Method']!,
+    };
+    String? body;
+    if (auth['X-Auth-Method'] == 'device_auth') {
+      headers['X-Device-Auth'] = auth['X-Device-Auth']!;
+    } else {
+      headers['Content-Type'] = auth['Content-Type']!;
+      body = json.encode({'password': auth['password']});
+    }
+
+    final res = await http.post(
+      Uri.parse('${Config.backendBaseUrl}/dsgvo/request_me.php'),
+      headers: headers,
+      body: body,
+    );
+
+    if (res.statusCode == 200) {
+      late final Map<String, dynamic> resp;
+      try {
+        resp = json.decode(res.body) as Map<String, dynamic>;
+      } on FormatException {
+        return _snack('Server sent non-JSON response');
+      }
+      final url = resp['url'] as String?;
+      if (url == null) return _snack('Unexpected response format');
+
+      _snack('Download ready');
+      if (!mounted) return;
+      showDialog(
+        context: context,
+        builder: (_) => AlertDialog(
+          title: const Text('Your data export'),
+          content: SelectableText('Download link (24 h valid):\n$url'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Clipboard.setData(ClipboardData(text: url));
+                Navigator.pop(context);
+                _snack('Link copied to clipboard');
+              },
+              child: const Text('Copy'),
+            ),
+            TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Close')),
+          ],
+        ),
+      );
+    } else {
+      _snack('Export failed: HTTP ${res.statusCode}');
+    }
+  }
+
+  Future<void> _deleteMe() async {
+    final jwt = await _token();
+    if (jwt == null) return _snack('Please login first');
+
+    if (!mounted) return;
+    final confirm = await showDialog<bool>(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Delete account?'),
+        content: const Text(
+            'Your profile will be permanently removed after 30 days. Continue?'),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              child: const Text('Cancel')),
+          TextButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: const Text('Delete')),
+        ],
+      ),
+    );
+    if (confirm != true) return;
+
+    final auth = await _authenticate();
+    if (auth == null) return;
+
+    final headers = {
+      'Authorization': 'Bearer $jwt',
+      'X-Auth-Method': auth['X-Auth-Method']!,
+    };
+    String? body;
+    if (auth['X-Auth-Method'] == 'device_auth') {
+      headers['X-Device-Auth'] = auth['X-Device-Auth']!;
+    } else {
+      headers['Content-Type'] = auth['Content-Type']!;
+      body = json.encode({'password': auth['password']});
+    }
+
+    final res = await http.post(
+      Uri.parse('${Config.backendBaseUrl}/dsgvo/delete_me.php'),
+      headers: headers,
+      body: body,
+    );
+
+    if (res.statusCode == 202) {
+      late final Map<String, dynamic> resp;
+      try {
+        resp = json.decode(res.body) as Map<String, dynamic>;
+      } on FormatException {
+        return _snack('Server sent non-JSON response');
+      }
+      final deletionDate = resp['deletion_date'] as String?;
+      if (deletionDate != null) {
+        await _storage.write(key: 'deletion_date', value: deletionDate);
+      }
+      _snack('Deletion scheduled – you will be logged out.');
+      if (mounted) setState(() {});
+    } else {
+      _snack('Delete failed: HTTP ${res.statusCode}');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Sicherheit & Datenschutz')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            FutureBuilder<String?>(
+              future: _restrictionDate(),
+              builder: (_, snap) {
+                final val = snap.data;
+                if (val == null) return const SizedBox.shrink();
+                final date = DateTime.parse(val);
+                final days = DateTime.now().difference(date).inDays;
+                return Column(
+                  children: [
+                    Text(
+                      'Processing restricted $days day${days == 1 ? '' : 's'} ago',
+                      style: const TextStyle(color: Colors.orangeAccent),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Your profile is hidden from other users',
+                      style: TextStyle(color: Colors.grey[600]),
+                    ),
+                  ],
+                );
+              },
+            ),
+            const SizedBox(height: 16),
+            FutureBuilder<String?>(
+              future: _restrictionDate(),
+              builder: (_, snap) {
+                final isRestricted = snap.data != null;
+                return ElevatedButton(
+                  onPressed: isRestricted
+                      ? _unrestrictMe
+                      : _showRestrictionConfirmation,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor:
+                        isRestricted ? Colors.green : Colors.orangeAccent,
+                    minimumSize: const Size.fromHeight(48),
+                  ),
+                  child: Text(
+                    isRestricted
+                        ? 'Unrestrict Processing'
+                        : 'Restrict Processing',
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                );
+              },
+            ),
+            const SizedBox(height: 16),
+            FutureBuilder<String?>(
+              future: _deletionDate(),
+              builder: (_, snap) {
+                final val = snap.data;
+                if (val == null) return const SizedBox.shrink();
+                final deletionDate = DateTime.parse(val);
+                final daysLeft = deletionDate.difference(DateTime.now()).inDays;
+                return Column(
+                  children: [
+                    Text(
+                      'Your profile will be deleted in $daysLeft day${daysLeft == 1 ? '' : 's'}',
+                      style: const TextStyle(color: Colors.redAccent),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      'You can cancel by logging in again',
+                      style: TextStyle(color: Colors.grey[600]),
+                    ),
+                  ],
+                );
+              },
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: _deleteMe,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.redAccent,
+                minimumSize: const Size.fromHeight(48),
+              ),
+              child: const Text('Delete Me',
+                  style: TextStyle(color: Colors.white)),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: _exportData,
+              style: ElevatedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(48)),
+              child: const Text('Request My Data',
+                  style: TextStyle(color: Colors.black)),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}"
+- make it check if profile is currently due to be deleted and also if its restricted currently
+- write endpoint for it aswell

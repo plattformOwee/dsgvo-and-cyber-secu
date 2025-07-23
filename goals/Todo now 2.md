@@ -1,3 +1,6 @@
+
+
+
 - [x] holger schreiben
 	- [x] fragen nach daniels kontakt
 	- [x] fragen nach jemandem der meine arbeit bewerten kann

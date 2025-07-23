@@ -2,7 +2,7 @@ Lets focus back on what the main mission of this chat is: DSGVO compliance. Here
 
 "
 
-| **Dateninventur & RoPA** [[RoPA woven]] (Record of Processing Activities) | Nachvollziehbarkeit (§30 DSGVO) | Erstelle ein Sheet: _Welche Felder_, _wo_ gespeichert (Mongo-Collection), _warum_, _Retention_ |
+| **Dateninventur & RoPA** [[RoPA woven Verarbeitungsverzeichnis]] (Record of Processing Activities) | Nachvollziehbarkeit (§30 DSGVO) | Erstelle ein Sheet: _Welche Felder_, _wo_ gespeichert (Mongo-Collection), _warum_, _Retention_ |
 
 | ------------------------------------------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 

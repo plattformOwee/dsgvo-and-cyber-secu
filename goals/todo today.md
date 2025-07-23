@@ -1,4 +1,4 @@
-- [ ] abwechselnd an diesen bereichen arbeiten
+
 	- [x] nachricht an gerd x 1
 	- [x] nachricht an karo x 1
 	- [x] nachricht an sebastian welp x 1

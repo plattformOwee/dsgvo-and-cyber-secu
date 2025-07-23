@@ -1,27 +1,17 @@
 # neue aufgaben 
 grant: 
 ### 3.1 Rectification endpoint (`rectify_me.php`)
-
-- **Authenticate** with the same JWT + device_auth/password flow.
-    
-- **Accept** a JSON body with the fields to correct (e.g. `profile.firstName`, `search_filter.ageRange`).
-    
-- **Use** `BulkWrite->update()` on the users collection to apply the changes.
-    
-- **Return** `200 OK` with the updated document or a confirmation message.  
-    [GDPR](https://gdpr-info.eu/art-16-gdpr/?utm_source=chatgpt.com)[Homepage | Data Protection Commission](https://www.dataprotection.ie/en/individuals/know-your-rights/right-rectification?utm_source=chatgpt.com)
-    
+> - ersetzt durch datenänderung aber wir ändern die info page, so das sie einen edit und nicht edit mode hat mit edit symbol das dann die methode abfragt und dann muste oder was auch immer und dann erst kann man die eigenen daten ändern. Gleiches wird ein malig beim ersten mal drücken irgendeines eingabefeldes ausgelößt.
 
 ### 3.2 Restriction endpoint (`restrict_me.php`)
 - **Authenticate** the user.
-    
 - **Set** a flag, e.g. `processing_restricted_at: new BSON\UTCDateTime()`, on their MongoDB document.
-    
 - **Ensure** your business logic checks this flag and suspends all non-essential processing.
-    
 - **Return** `200 OK` with the restriction timestamp.  
     [GDPR](https://gdpr-info.eu/art-18-gdpr/?utm_source=chatgpt.com)[GDPR.eu](https://gdpr.eu/article-18-right-to-restriction-of-processing/?utm_source=chatgpt.com)
-    
+> 1. ein button erstellen in "Datenschutz und cyber securtiy" page der erscheint wann auch immer ein prozess läuft, dazu ein par flags einführen also `processing_restricted_at: new BSON\UTCDateTime()`, 
+> 2. die flag kann man am besten auch per endpoint als mitarbeiter setzen oder so
+> 3. jeden endpoint darauf reagieren lassen vielleicht kann man das in bootstrap oder irgendwo integrieren damit nicht jedes script geändert werden muss
 
 ### 3.3 Objection endpoint (`object_me.php`)
 - **Authenticate** the user.

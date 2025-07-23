@@ -1,0 +1,4 @@
+- [ ] wecker für morgen stellen um termin beim kvr aus zu machen personal ausweis abholung
+- [ ] dem kvr schreiben und nach nächsten schritten fragen wegen führerschein
+- [ ] listen was alles gemacht werden muss / wurde
+- [ ] mein aok > selbstauskunft einreichen

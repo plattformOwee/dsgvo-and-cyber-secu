@@ -1,42 +1,55 @@
-- [ ] [[DSGVO]]
-	- [ ] dateninventur & RoPA (denke verarbeitungsverzeichnis) [[RoPA woven]]
+- [ ] [[DSGVO ]] [[DSGVO TODO]] [[DSGVO TODO LIST]]
+	- [ ] [[RoPA woven Verarbeitungsverzeichnis]] > dokument das wo liegen und auf anfrage bereit gestellt werden muss und updated werden muss bei jeglichen Änderungen
 		- [ ] checken ob alle dinge die hier mit einwilligung begründed sind wirklich in den AGBs ist 
 		- [ ] checken ob die RoPA wirklich alle felder die es gibt nennt
-	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]]
-		- [ ] checken ob es alle consent flags von hier wirklich gibt in app
-			- [ ] funktionell
-			- [ ] gespeichert auf server
-		- [ ] checken ob ob die consent felder in den anderen dokumenten also die neue profil struktur beachtet ist
-		- [ ] checken das die neuen privacy policy abschnitte dementsprechend da sind
-		- [ ] rectification
-		- [ ] objection
-		- [ ] Restriction
+	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]] > als json dokument iwo 
 	- [ ] [[Privacy Policy und Impressum]]
+		- [ ] Your privacy notice (or “how to exercise your rights” page) must explain how a user can request restriction—e.g. “Please e-mail privacy@yourdomain.com with ‘Request restriction’ in the subject.”
+			- [ ] probably muss es auch in request_me stehen aber das nochmal researchen
 	- [ ] [[crashlytics]]
-	- [ ] [[User-Rights-API]] 
-		- [ ] delete_me.php
+	- [ ] [[User-Rights-API]]
+		- [x] delete_me.php
 			- [x] script exists and works by recording the request
 			- [x] + a script to look each night for users to delete cron job
 				- [x] sudo nano /var/www/woven/scripts/cleanup_delete_requests.php
 				- [x] sudo tail -n 20 /var/www/woven/logs/cleanup.log
-			- [ ] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
-		- [ ] request_me.php
+			- [x] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
+		- [x] request_me.php
 			- [x] umgeschrieben benutzt kein aws s3 mehr
 			- [x] cron job gemacht der die page jeweils nach 24 stunden immer löscht cleanup_exports.sh 
-			- [ ] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
-				- [ ] mal passwort in login und signup flow integrieren lul
-			- [ ] checken ob hierin alle "export page" nötigen dinge drin sind (#3)
+			- [x] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
+				- [x] mal passwort in login und signup flow integrieren lul
+			- [x] checken ob hierin alle "export page" nötigen dinge drin sind (#3)
+		- [x] Rectification
+			- [ ] eine hinter authentifizierung geschützte seite wo der nutzer alle seine daten angleichen kann mit sofortiger wirkung
+		- [x] Objection
+			- [ ] nutzer kann alle persmissions jederzeit ändern nach vorheriger authentifizierung in "permissions page"
+		- [ ] Restriction
+			- [ ] das soll es geben als möglichkeit während andere dinge ablaufen die aber hier immer instant passieren aktuell, 
+				- [ ] mal fragen, ob das restriction recht ausreichend bedient ist, wenn man es iwie formel per email anfragen kann oder ob es easily accessable usw sein muss
+				- [ ] egal > wir geben die möglichkeit einfach durchgehend dann muss man sich darum nicht kümmern
+			- [ ] restrict and unrestrict in page implementiert
+			- [ ] auth abrfage vorher
+			- [ ] [[todo für chatgpt]]
+			- [ ] alle scripte dementsprechend reagieren lassen
+				- [ ] was muss passieren / gelassen werden bei restricted processing
 		- [ ] von #5 privacy policy abschnitt schauen, dass er wirklich in der privacy policy is
 		- [ ] vojn #4 schauen das die sicherheit gewährt ist
 			- [ ] rate limit (DoS)
 			- [ ] re auth prompt
 			- [ ] download url nur 24 h gültig
-			- [ ] | **2-Man-Rule für Admin-Löschung**       | Wenn Ops manuell eingreifen muss    kp nochnal chatgpt fragen 
+			- [ ] **2-Man-Rule für Admin-Löschung**     |      Wenn Ops manuell eingreifen muss    kp nochnal chatgpt fragen 
 	- [ ] [[Datenminimierung & Security]]
 	- [ ] [[Auftragsverarbeitung]]
 	- [ ] [[Breach-Process]]
 	- [ ] [[unterschied zwischen RoPa und rechtsgrundlage festlegen]]
 	- [ ] [[encrypt as much as possible]]
+	- [ ] [[chatgpt fragen was noch fehlt]]
+
+- [x] Geld für notar auftreiben 7
+	- [ ] herausfinden wv es ist
+		- [ ] email geschrieben
+	- [x] es auftreiben von lukas
 
 
 - [ ] [[cyber security]]
@@ -57,17 +70,41 @@
 	- [ ] bewerben
 
 
-- [ ] firmenanmeldung
+- [ ] Geld
+	- [ ] von gerd behalten
+	- [ ] von milan bekommen
+		- [ ] ihn endlich erreichen
+
+
+- [ ] firmenanmeldung und rechtliches
 	- [x] geld
 	- [x] beglaubigt.de
 	- [x] [[Gründungsurkunde und Gesellschaftsvertrag]]
-	- [ ] notar termin
-	- [ ] handelsregister eintragung
-	- [ ] google pay signup
+	- [x] notar termin
+	- [x] geld dafür 
+	- [ ] create geschäftkonto
+		- [ ] research the geschäftskonto market 
+		- [ ] decide for one
+		- [ ] make oppointment
+		- [ ] get money from lukas
+		- [ ] got there create and pay in
+	- [ ] send confirmation to notary and request to be listen in handelsregister
+	- [ ] ins transparenzregister eintragen
+		- [ ] herausfinden ob das vor nach handelsregister passieren soll
+			- [ ] anrufen bei beglaubigt
+			- [ ] beim nächsten notar termin nachfragen
+	- [ ] firmen namen auf das Klingelschild packen weil geht nicht nach namen
+	- [ ] beim finanzamt melden und elster account einrichten
+	- [ ] herausfinden wie abbo Einnahmen zu verbuchen sind
+		- [ ] anfangs manuell
+		- [ ] dann schauen wie man es automatisieren kann
+
+
 
 
 - [ ] Marke sichern
 	- [ ] [[bestehende woven marke revoken]]
+	- [ ] voven sichern
 
 
 - [ ] App
@@ -107,6 +144,77 @@
 		- [x] eigenen kaufen / geld >
 			- [x] rita schreiben
 			- [ ] 
+
+
+
+
+
+
+
+# wenn noch zeit ist
+- [ ] App Design
+	- [ ] [[more beautiful edit profile info page]]
+
+
+
+# todo now 1
+- [ ] research the geschäftskonto market 
+- [ ] decide for one
+- [ ] make oppointment
+- [ ] dsvgo object rectify and so on
+	- [ ] 
+- [ ] 
+
+
+
+
+- [ ] create company
+	- [ ] create geschäftkonto
+		- [ ] research the geschäftskonto market 
+		- [ ] decide for one
+		- [ ] make oppointment
+		- [ ] get money from lukas
+		- [ ] go there create and pay in
+	- [ ] send confirmation to notary and request to be listen in handelsregister
+	- [ ] ins transparenzregister eintragen
+		- [ ] herausfinden ob das vor nach handelsregister passieren soll
+			- [ ] anrufen bei beglaubigt
+			- [ ] beim nächsten notar termin nachfragen
+	- [ ] firmen namen auf das Klingelschild packen weil geht nicht nach namen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ##### To-do-Liste – Vorbereitung & Einreichung eines Nichtbenutzungsantrags (Art. 58 EUTMR) gegen EUTM 017995606 „WOVEN“

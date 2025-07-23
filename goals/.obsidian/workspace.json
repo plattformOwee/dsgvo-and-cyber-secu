@@ -4,11 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "a7c5086c0e7ab35a",
+        "id": "019b2610bf91b99d",
         "type": "tabs",
+        "dimension": 45.30567685589519,
         "children": [
           {
-            "id": "c76abf4f4aa24dfe",
+            "id": "fb2f3c2c6314992c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,35 +23,71 @@
             }
           },
           {
-            "id": "5b70cc354613f261",
+            "id": "d94f12ae864fc3b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSGVO.md",
+                "file": "DSGVO TODO LIST.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DSGVO"
-            }
-          },
-          {
-            "id": "d574c0067b91a7fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rechtsgrundlage festlegen.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Rechtsgrundlage festlegen"
+              "title": "DSGVO TODO LIST"
             }
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "a7c5086c0e7ab35a",
+        "type": "tabs",
+        "dimension": 54.69432314410481,
+        "children": [
+          {
+            "id": "bcf5ecae475e383d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "prompt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "prompt"
+            }
+          },
+          {
+            "id": "b621e9c24cb65122",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "prompt 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "prompt 2"
+            }
+          },
+          {
+            "id": "aeefea1549707d72",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "App paps.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "App paps"
+            }
+          }
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -208,34 +245,34 @@
       "smart-gantt:Smart Gantt": false
     }
   },
-  "active": "5b70cc354613f261",
+  "active": "aeefea1549707d72",
   "lastOpenFiles": [
+    "prompt 3.md",
+    "prompt 2.md",
+    "DSGVO TODO LIST.md",
     "voven what is to do.md",
-    "Rechtsgrundlage festlegen.md",
-    "RoPA woven.md",
-    "User-Rights-API.md",
-    "Untitled 86.md",
     "DSGVO.md",
-    "Document every thing i touch from now on.md",
-    "commands and files that have worked.md",
-    "Untitled 85.md",
-    "Untitled 84.md",
-    "Swipe_chat_play.md",
-    "Untitled 81.md",
-    "Untitled 83.md",
+    "User-Rights-API.md",
     "Privacy Policy und Impressum.md",
-    "Routine starting questions.md",
-    "Todo now 2.md",
+    "swipe_chat_play project doc.md",
+    "Document every thing i touch from now on.md",
+    "DSGVO TODO.md",
+    "prompt.md",
+    "RoPA woven Verarbeitungsverzeichnis.md",
+    "Rechtsgrundlage festlegen.md",
     "todo now.md",
-    "cyber security.md",
-    "unterschied zwischen RoPa und rechtsgrundlage festlegen.md",
-    "Todo.md",
-    "Untitled 82.md",
-    "bestehende woven marke revoken.md",
-    "Breach-Process.md",
-    "Auftragsverarbeitung.md",
-    "Datenminimierung & Security.md",
-    "Gründungsurkunde und Gesellschaftsvertrag.md",
+    "commands and files that have worked.md",
+    "App paps.md",
+    "Untitled 102.md",
+    "Untitled 103.md",
+    "Todo now 2.md",
+    "todo today.md",
+    "chatgpt fragen was noch fehlt.md",
+    "Todo today 2.md",
+    "Untitled.md",
+    "Untitled 101.md",
+    "Untitled 100.md",
+    "Untitled 99.md",
     "Untitled 1.canvas",
     "login_signup flow.canvas",
     "direct lending.canvas",
