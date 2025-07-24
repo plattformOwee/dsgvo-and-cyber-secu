@@ -43,6 +43,55 @@
 	- [ ] [[Auftragsverarbeitung]]
 	- [ ] [[Breach-Process]]
 	- [ ] [[unterschied zwischen RoPa und rechtsgrundlage festlegen]]
+	- [ ] [[make permissions effective]]
+		- [ ] push notes
+			- [ ] implement them in the first place (FCM init + register.php)
+			- [ ] make permission effective (deleteToken + backend filter)
+		- [ ] location tracking
+			- [ ] if user doesnt give that permision > 
+				- [ ] show an "allow location tracking"-button above the cards
+				- [ ] ignore this profile in match.php
+					- [ ] if (!($user->userdata->consents->location->granted ?? false)) {
+					      // skip adding geoNear stage
+					      }
+			- [x] delete the location of the user if they retract this permission (consent.php $unset)
+			- [ ] gate dating‑radius & enable‑location pages via ConsentService
+		- [ ] show sensitive data: "religion and politics"
+			- [ ] create two scripts:
+				- [ ] get_profile
+				- [ ] get_userdata
+			- [ ] make both of them ignore religion and politics 
+		- [ ] newsletter > einfach für später merken
+		- [ ] AGBs zustimmung pflicht machen
+			- [ ] Ohne consent, geht der "continue" button nicht und das am besten nicht nur im frontend
+			- [ ] befor der consent gegeben ist, das profil in users_in_creation collection speichern? um es aus allem anderen automatisch raus zu halten?
+				- [ ] oder eben consent flag die gecheckt wird und ohne die keinerlei daten über den nuter angenommen werden + er nirgends angezeigt wird ?
+		- [ ] noch irgendwelche punkte oder permiss
+		- [ ] 
+		- [ ] Gate everywhere in the app
+			- [ ] find all locations that need to be gated
+				- [ ] location
+					- [ ] in match tab
+					- [ ] in send location in chat
+					- [ ] when getting the location first time in dating radius and enable location page
+				- [ ] voicerecording
+					- [ ] in chat (record widget)
+					- [ ] in  "add voicememo to profile" -screen (where i also want to add the same widget actually)
+				- [ ] access to galery (must this even be a consent?)
+					- [ ] when sending images
+				- [ ] AGBs
+					- [ ] everywhere, nothing works without 
+
+
+
+			- [ ] example voicememo:
+				- [ ] if (ConsentService.instance.current.microphone) {
+					      await recordVoiceMemo();
+						       } else {
+					       showDialog(context: context, builder: (_) =>
+					       const AlertDialog(content: Text('Enable microphone in Permissions')));
+				       }
+				       
 	- [ ] [[encrypt as much as possible]]
 	- [ ] [[chatgpt fragen was noch fehlt]]
 
