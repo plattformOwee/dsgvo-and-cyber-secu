@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "fb2f3c2c6314992c",
+            "id": "6bb90dccb7b3fc25",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,76 +22,63 @@
             }
           },
           {
-            "id": "a5b7347499648f57",
+            "id": "705e7f9945dc4741",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "make permissions effective.md",
+                "file": "TODO next.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "make permissions effective"
+              "title": "TODO next"
             }
           },
           {
-            "id": "bcd0162f288baafb",
+            "id": "797284238f8044ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "make permissions effective.md",
+                "file": "DSGVO TODO LIST.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "make permissions effective"
+              "title": "DSGVO TODO LIST"
             }
           },
           {
-            "id": "bcf5ecae475e383d",
+            "id": "cdd525eadbdd9125",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prompt.md",
+                "file": "Data Inventory & Lawful Basis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "prompt"
+              "title": "Data Inventory & Lawful Basis"
             }
           },
           {
-            "id": "b621e9c24cb65122",
+            "id": "1d762cc303525344",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prompt 2.md",
+                "file": "AGBs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "prompt 2"
-            }
-          },
-          {
-            "id": "aeefea1549707d72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "App paps.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "App paps"
+              "title": "AGBs"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -148,7 +135,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 285.5
   },
   "right": {
     "id": "f5315bc9e35d323b",
@@ -249,34 +236,34 @@
       "smart-gantt:Smart Gantt": false
     }
   },
-  "active": "fb2f3c2c6314992c",
+  "active": "1d762cc303525344",
   "lastOpenFiles": [
-    "Datenminimierung & Security.md",
+    "Data Inventory & Lawful Basis.md",
+    "AGBs.md",
+    "DSGVO TODO LIST.md",
+    "Privacy Policy Notice.md",
     "voven what is to do.md",
-    "make permissions effective.md",
+    "Consent Management logic.md",
+    "commands and files that have worked.md",
+    "TODO next.md",
+    "Untitled 107.md",
+    "Untitled 106.md",
+    "Untitled 105.md",
+    "Untitled 104.md",
+    "Woven präsentation (scp).md",
+    "DSGVO TODO.md",
+    "RoPA woven Verarbeitungsverzeichnis.md",
     "App paps.md",
+    "prompt.md",
+    "make permissions effective.md",
+    "Datenminimierung & Security.md",
     "prompt 3.md",
     "prompt 2.md",
-    "DSGVO TODO LIST.md",
     "DSGVO.md",
     "User-Rights-API.md",
     "Privacy Policy und Impressum.md",
     "swipe_chat_play project doc.md",
     "Document every thing i touch from now on.md",
-    "DSGVO TODO.md",
-    "prompt.md",
-    "RoPA woven Verarbeitungsverzeichnis.md",
-    "Rechtsgrundlage festlegen.md",
-    "todo now.md",
-    "commands and files that have worked.md",
-    "Untitled 102.md",
-    "Untitled 103.md",
-    "Todo now 2.md",
-    "todo today.md",
-    "chatgpt fragen was noch fehlt.md",
-    "Todo today 2.md",
-    "Untitled.md",
-    "Untitled 101.md",
     "Untitled 1.canvas",
     "login_signup flow.canvas",
     "direct lending.canvas",

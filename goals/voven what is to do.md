@@ -1,38 +1,51 @@
 - [ ] [[DSGVO ]] [[DSGVO TODO]] [[DSGVO TODO LIST]]
 	- [ ] [[RoPA woven Verarbeitungsverzeichnis]] > dokument das wo liegen und auf anfrage bereit gestellt werden muss und updated werden muss bei jeglichen Änderungen
 		- [ ] checken ob alle dinge die hier mit einwilligung begründed sind wirklich in den AGBs ist 
+		- [ ] sicherstellen, dass auch die chats vom cron job deleted werden
+		- [ ] make cron job which deletes all logs after 30 days
 		- [ ] checken ob die RoPA wirklich alle felder die es gibt nennt
 	- [ ] Rechtsgrundlage festlegen Art. 6 DSGVO “Vertrag” (Nutzungs-Abo) reicht meistens; für optionale Mails/Analytics zusätzliche Einwilligung" [[Rechtsgrundlage festlegen]] > als json dokument iwo 
 	- [ ] [[Privacy Policy und Impressum]]
 		- [ ] Your privacy notice (or “how to exercise your rights” page) must explain how a user can request restriction—e.g. “Please e-mail privacy@yourdomain.com with ‘Request restriction’ in the subject.”
 			- [ ] probably muss es auch in request_me stehen aber das nochmal researchen
 	- [ ] [[crashlytics]]
+		- [ ] gibts noch nicht sind aber in RoPA
+	- [ ] Erfüllte aufgaben zum merken und später sortieren
+		- [ ] consents now have timestamps
+		- [ ] permissions page now informs user about each given consent
+		- [ ] 
 	- [ ] [[User-Rights-API]]
-		- [x] delete_me.php
+		- [ ] delete_me.php
 			- [x] script exists and works by recording the request
 			- [x] + a script to look each night for users to delete cron job
 				- [x] sudo nano /var/www/woven/scripts/cleanup_delete_requests.php
 				- [x] sudo tail -n 20 /var/www/woven/logs/cleanup.log
 			- [x] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
-		- [x] request_me.php
+			- [ ] **Verify Deletion Completeness:** Enhance `cleanup_delete_requests.php` to ensure it also deletes associated chat logs and all physical files (images, voice memos).
+			- [ ] rate limit
+		- [ ] request_me.php
 			- [x] umgeschrieben benutzt kein aws s3 mehr
 			- [x] cron job gemacht der die page jeweils nach 24 stunden immer löscht cleanup_exports.sh 
 			- [x] re-auth prompt also entweder nochmal nach passwort oder nach device auth fragen
 				- [x] mal passwort in login und signup flow integrieren lul
 			- [x] checken ob hierin alle "export page" nötigen dinge drin sind (#3)
+			- [ ] rate limit
 		- [x] Rectification
-			- [ ] eine hinter authentifizierung geschützte seite wo der nutzer alle seine daten angleichen kann mit sofortiger wirkung
+			- [x] eine hinter authentifizierung geschützte seite wo der nutzer alle seine daten angleichen kann mit sofortiger wirkung
+			- [x] rate limit
 		- [x] Objection
-			- [ ] nutzer kann alle persmissions jederzeit ändern nach vorheriger authentifizierung in "permissions page"
-		- [ ] Restriction
-			- [ ] das soll es geben als möglichkeit während andere dinge ablaufen die aber hier immer instant passieren aktuell, 
-				- [ ] mal fragen, ob das restriction recht ausreichend bedient ist, wenn man es iwie formel per email anfragen kann oder ob es easily accessable usw sein muss
-				- [ ] egal > wir geben die möglichkeit einfach durchgehend dann muss man sich darum nicht kümmern
-			- [ ] restrict and unrestrict in page implementiert
-			- [ ] auth abrfage vorher
-			- [ ] [[todo für chatgpt]]
-			- [ ] alle scripte dementsprechend reagieren lassen
-				- [ ] was muss passieren / gelassen werden bei restricted processing
+			- [x] nutzer kann alle persmissions jederzeit ändern nach vorheriger authentifizierung in "permissions page"
+		- [x] Restriction
+			- [x] profile is moved to "restricted_users" 
+			- [x] all other processing is stopped
+			- [x] user can still log in but only access the screen to unrestrict processing or request or delete their data
+		- [ ] **Verify Export Completeness:** Enhance `request_me.php` to ensure the generated JSON contains all the data points listed above (profile, chats, consents, etc.).
+		- [ ] **Implement Rate-Limiting:**
+			- [ ] Add rate-limiting logic (e.g., 1 request per 24 hours) to `request_me.php`.
+			- [ ] Add brute-force protection to the re-authentication prompts used by the user rights API.
+		- [ ] **Finalize "2-Admin Rule" Policy:** Formally decide that your current system (API request log + cron job execution + manual action logging) is your implementation of the 2-admin principle. Document this decision for your own records.
+			- [ ] Add rate-limiting logic (e.g., 1 request per 24 hours) to `request_me.php`.
+			- [ ] Add brute-force protection to the re-authentication prompts used by the user rights API.
 		- [ ] von #5 privacy policy abschnitt schauen, dass er wirklich in der privacy policy is
 		- [ ] vojn #4 schauen das die sicherheit gewährt ist
 			- [ ] rate limit (DoS)
@@ -111,6 +124,7 @@
 				- [ ] https idk
 		- [ ] encrypt at rest
 			- [ ] find out what that even mean
+	- [ ] list all the security mesures in RoPA TOMs
 
 
 - [ ] y-combinator bewerbung
