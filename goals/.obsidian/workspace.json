@@ -22,21 +22,35 @@
             }
           },
           {
-            "id": "705e7f9945dc4741",
+            "id": "f3785bc7ef5e7882",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO next.md",
+                "file": "noch machen vor losgehen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO next"
+              "title": "noch machen vor losgehen"
             }
           },
           {
-            "id": "797284238f8044ff",
+            "id": "3c6cd23966f4231c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "nico schreiben google doc als vorlage.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "nico schreiben google doc als vorlage"
+            }
+          },
+          {
+            "id": "971a4a5798c9680b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,35 +64,34 @@
             }
           },
           {
-            "id": "cdd525eadbdd9125",
+            "id": "84f8faff300d967f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data Inventory & Lawful Basis.md",
+                "file": "rate-limiting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data Inventory & Lawful Basis"
+              "title": "rate-limiting"
             }
           },
           {
-            "id": "1d762cc303525344",
+            "id": "23e30bc3ea4e3736",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AGBs.md",
+                "file": "commands and files that have worked.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AGBs"
+              "title": "commands and files that have worked"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -236,34 +249,34 @@
       "smart-gantt:Smart Gantt": false
     }
   },
-  "active": "1d762cc303525344",
+  "active": "6bb90dccb7b3fc25",
   "lastOpenFiles": [
-    "Data Inventory & Lawful Basis.md",
-    "AGBs.md",
-    "DSGVO TODO LIST.md",
-    "Privacy Policy Notice.md",
+    "noch machen vor losgehen.md",
+    "nico schreiben google doc als vorlage.md",
     "voven what is to do.md",
-    "Consent Management logic.md",
     "commands and files that have worked.md",
+    "rate-limiting.md",
+    "DSGVO TODO LIST.md",
+    "Untitled 109.md",
+    "Privacy Policy Notice.md",
+    "todo todaya223.md",
+    "Consent Management logic.md",
+    "AGBs.md",
+    "RoPA woven Verarbeitungsverzeichnis.md",
+    "Data Inventory & Lawful Basis.md",
     "TODO next.md",
+    "RoPA – Verarbeitungsverzeichnis.md",
+    "Untitled 108.md",
     "Untitled 107.md",
     "Untitled 106.md",
     "Untitled 105.md",
     "Untitled 104.md",
     "Woven präsentation (scp).md",
     "DSGVO TODO.md",
-    "RoPA woven Verarbeitungsverzeichnis.md",
     "App paps.md",
     "prompt.md",
     "make permissions effective.md",
     "Datenminimierung & Security.md",
-    "prompt 3.md",
-    "prompt 2.md",
-    "DSGVO.md",
-    "User-Rights-API.md",
-    "Privacy Policy und Impressum.md",
-    "swipe_chat_play project doc.md",
-    "Document every thing i touch from now on.md",
     "Untitled 1.canvas",
     "login_signup flow.canvas",
     "direct lending.canvas",

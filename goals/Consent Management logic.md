@@ -1,521 +1,239 @@
-"**1. Is Your Consent "Informed"?**
-When a user is about to flip a toggle from false to true, they must be informed about what they are agreeing to.
+# Consent Management logic
+- in settings, we have a "permissions" page, where the user can toggle on and off each permission and bellow each one, the purpose is shown using language based on the privacy notice and AGBs  > informed consent
+- we have a consent service:
+  "
+  import 'dart:convert';
 
-- **Action:** For each consent toggle in your app's settings, provide a short, clear explanation. You can use the wording directly from the Privacy Policy we just created."
-Task1: Please edit the permissions page, to make it so:
- "
-```
-import 'dart:convert';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
-import 'dart:async';
-
-import 'package:flutter/gestures.dart';
-
-import 'package:flutter/material.dart';
-
-import 'package:google_fonts/google_fonts.dart';
-
-import 'package:permission_handler/permission_handler.dart';
+import 'package:http/http.dart' as http;
 
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 import 'package:geolocator/geolocator.dart';
 
-  
-
-import 'package:swipe_chat_play/services/consent_service.dart';
-
-import 'package:swipe_chat_play/usables/inappwebview.dart';
-
-import 'package:swipe_chat_play/usables/primary_button.dart';
+import '../config.dart';
 
   
 
-class PermissionsPage extends StatefulWidget {
+class Consent {
 
-  const PermissionsPage({super.key});
+  Consent({
 
-  
+    required this.tos,
 
-  @override
+    required this.newsletter,
 
-  State<PermissionsPage> createState() => _PermissionsPageState();
+    required this.profileSensitives,
 
-}
+    required this.location,
 
-  
+    required this.notifications,
 
-class _PermissionsPageState extends State<PermissionsPage> {
+    required this.microphone,
 
-  static const _stripe = Color(0xFFFFEDE6);
-
-  static const _highlight = Color(0xFFFA938E);
+  });
 
   
 
-  bool agreeTos = false;
+  bool tos;
 
-  bool newsOn = false;
+  bool newsletter;
 
-  bool sensOn = false;
+  bool profileSensitives;
 
-  bool pushOn = false;
+  bool location;
 
-  bool locOn = false;
+  bool notifications;
 
-  bool micOn = false;
-
-  bool _busy = false;
+  bool microphone;
 
   
 
-  StreamSubscription<Position>? _locStream;
+  factory Consent.empty() => Consent(
 
-  
+        tos: false,
 
-  @override
+        newsletter: false,
 
-  void initState() {
+        profileSensitives: false,
 
-    super.initState();
+        location: false,
 
-    _sync();
+        notifications: false,
 
-  }
-
-  
-
-  Future<void> _sync() async {
-
-    setState(() => _busy = true);
-
-    await ConsentService.instance.init();
-
-    final c = ConsentService.instance.current;
-
-    setState(() {
-
-      agreeTos = c.tos;
-
-      newsOn = c.newsletter;
-
-      sensOn = c.profileSensitives;
-
-      pushOn = c.notifications;
-
-      locOn = c.location;
-
-      micOn = c.microphone;
-
-      _busy = false;
-
-    });
-
-  }
-
-  
-
-  /* ───── Push toggle ─────────────────────────────────────────── */
-
-  Future<void> _togglePush(bool target) async {
-
-    // optimistic UI – switch moves instantly
-
-    setState(() => pushOn = target);
-
-  
-
-    if (!target) {
-
-      await FirebaseMessaging.instance.deleteToken();
-
-    } else {
-
-      // 1) OS‑level permission (Android 13+ or iOS)
-
-      final permStatus = await Permission.notification.request();
-
-      if (!permStatus.isGranted) {
-
-        setState(() => pushOn = false); // undo
-
-        return;
-
-      }
-
-  
-
-      // 2) FCM permission (iOS) – returns settings object
-
-      final settings = await FirebaseMessaging.instance.requestPermission();
-
-      final authorised =
-
-          settings.authorizationStatus == AuthorizationStatus.authorized ||
-
-              settings.authorizationStatus == AuthorizationStatus.provisional;
-
-  
-
-      if (!authorised) {
-
-        setState(() => pushOn = false); // undo
-
-        return;
-
-      }
-
-  
-
-      // 3) Ensure the device has a token (creates one if needed)
-
-      await FirebaseMessaging.instance.getToken();
-
-    }
-
-  }
-
-  
-
-  /* ───── Location toggle ─────────────────────────────────────── */
-
-  Future<void> _toggleLoc(bool target) async {
-
-    if (target) {
-
-      final perm = await Permission.locationWhenInUse.request();
-
-      if (!perm.isGranted) return;
-
-      _locStream = Geolocator.getPositionStream().listen((_) {});
-
-    } else {
-
-      await _locStream?.cancel();
-
-      _locStream = null;
-
-    }
-
-    setState(() => locOn = target);
-
-  }
-
-  
-
-  /* ───── Microphone toggle ───────────────────────────────────── */
-
-  Future<void> _toggleMic(bool target) async {
-
-    if (target) {
-
-      final perm = await Permission.microphone.request();
-
-      if (!perm.isGranted) return;
-
-    }
-
-    setState(() => micOn = target);
-
-  }
-
-  
-
-  /* ───── Persist all consents ────────────────────────────────── */
-
-  Future<void> _save() async {
-
-    if (!agreeTos) {
-
-      ScaffoldMessenger.of(context).showSnackBar(
-
-        const SnackBar(content: Text('Please accept the Terms first')),
+        microphone: false,
 
       );
 
-      return;
+  
+
+  factory Consent.fromJson(Map<String, dynamic> j) => Consent(
+
+        tos: j['tos'] ?? false,
+
+        newsletter: j['newsletter'] ?? false,
+
+        profileSensitives: j['profile_sensitives'] ?? false,
+
+        location: j['location'] ?? false,
+
+        notifications: j['notifications'] ?? false,
+
+        microphone: j['microphone'] ?? false,
+
+      );
+
+  
+
+  Map<String, dynamic> toJson() => {
+
+        'tos': tos,
+
+        'newsletter': newsletter,
+
+        'profile_sensitives': profileSensitives,
+
+        'location': location,
+
+        'notifications': notifications,
+
+        'microphone': microphone,
+
+      };
+
+}
+
+  
+
+class ConsentService {
+
+  ConsentService._internal();
+
+  static final instance = ConsentService._internal();
+
+  
+
+  final _local = const FlutterSecureStorage();
+
+  Consent _current = Consent.empty();
+
+  
+
+  Consent get current => _current;
+
+  
+
+  /* ── initialise at app start ─────────────────────────────────── */
+
+  Future<void> init() async {
+
+    final jwt = await _local.read(key: 'jwt_token');
+
+    final localRaw = await _local.read(key: 'consents_json');
+
+    if (localRaw != null) {
+
+      _current = Consent.fromJson(json.decode(localRaw));
 
     }
 
-    setState(() => _busy = true);
+    if (jwt != null) {
 
-    final next = Consent(
+      try {
 
-      tos: agreeTos,
+        final res = await http.get(
 
-      newsletter: newsOn,
+          Uri.parse('${Config.backendBaseUrl}/dsgvo/get_consents.php'),
 
-      profileSensitives: sensOn,
+          headers: {'Authorization': 'Bearer $jwt'},
 
-      location: locOn,
+        );
 
-      notifications: pushOn,
+        if (res.statusCode == 200) {
 
-      microphone: micOn,
+          _current = Consent.fromJson(json.decode(res.body));
 
-    );
+        }
 
-    await ConsentService.instance.update(next);
+      } catch (_) {/* ignore – stay on local */}
 
-    if (mounted) Navigator.pop(context, true);
+    }
 
   }
 
   
 
-  /* ───── UI ──────────────────────────────────────────────────── */
+  /* ── update consent and apply side-effects ───────────────────── */
 
-  @override
+  Future<void> update(Consent next) async {
 
-  Widget build(BuildContext context) {
+    final old = _current;
 
-    return Scaffold(
+    _current = next;
 
-      backgroundColor: Colors.grey[100],
-
-      body: SafeArea(
-
-        child: Column(
-
-          children: [
-
-            Container(height: 8, color: _stripe),
-
-            const SizedBox(height: 24),
-
-            Text('Permissions',
-
-                style: GoogleFonts.zillaSlab(
-
-                  fontSize: 24,
-
-                  fontWeight: FontWeight.w600,
-
-                  color: Colors.grey[800],
-
-                )),
-
-            const SizedBox(height: 16),
-
-            Expanded(
-
-              child: _busy
-
-                  ? const Center(child: CircularProgressIndicator())
-
-                  : ListView(
-
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-
-                      children: [
-
-                        SwitchListTile(
-
-                          value: newsOn,
-
-                          onChanged: (v) => setState(() => newsOn = v),
-
-                          title: const Text(
-
-                              'Receive newsletter / product updates'),
-
-                        ),
-
-                        SwitchListTile(
-
-                          value: sensOn,
-
-                          onChanged: (v) => setState(() => sensOn = v),
-
-                          title:
-
-                              const Text('Show religion / politics in profile'),
-
-                        ),
-
-                        SwitchListTile(
-
-                          value: pushOn,
-
-                          onChanged: _togglePush,
-
-                          title: const Text('Allow push notifications'),
-
-                        ),
-
-                        SwitchListTile(
-
-                          value: locOn,
-
-                          onChanged: _toggleLoc,
-
-                          title: const Text('Enable location‑based matching'),
-
-                        ),
-
-                        SwitchListTile(
-
-                          value: micOn,
-
-                          onChanged: _toggleMic,
-
-                          title: const Text('Allow microphone access'),
-
-                        ),
-
-                      ],
-
-                    ),
-
-            ),
-
-            Padding(
-
-              padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
-
-              child: PrimaryButton(
-
-                text: 'Save',
-
-                isLoading: _busy,
-
-                onPressed: _busy ? null : _save,
-
-              ),
-
-            ),
-
-          ],
-
-        ),
-
-      ),
-
-    );
-
-  }
+    await _local.write(key: 'consents_json', value: json.encode(next.toJson()));
 
   
 
-  @override
+    // Push token management
 
-  void dispose() {
+    if (old.notifications && !next.notifications) {
 
-    _locStream?.cancel();
+      await FirebaseMessaging.instance.deleteToken();
 
-    super.dispose();
+    } else if (!old.notifications && next.notifications) {
+
+      await FirebaseMessaging.instance.requestPermission();
+
+      await FirebaseMessaging.instance
+
+          .getToken(); // triggers register-endpoint in your code
+
+    }
+
+  
+
+    // Location stream management
+
+    if (!next.location) {
+
+      Geolocator.getPositionStream().listen(null).cancel();
+
+    }
+
+  
+
+    // Microphone – nothing to revoke programmatically; just gate UI.
+
+  
+
+    // Persist remotely
+
+    final jwt = await _local.read(key: 'jwt_token');
+
+    if (jwt != null) {
+
+      await http.post(
+
+        Uri.parse('${Config.backendBaseUrl}/dsgvo/consent.php'),
+
+        headers: {
+
+          'Authorization': 'Bearer $jwt',
+
+          'Content-Type': 'application/json',
+
+        },
+
+        body: json.encode(next.toJson()),
+
+      );
+
+    }
 
   }
 
 }
-```
-
-"**2. Is Your Consent "Granular" and "Unbundled? ** " > yes it is
-
-"**3. Is Consent Easy to Withdraw?**"
-> i have a page where user can withdraw any consents so i guess yes
-
-
-"**4. Are You Keeping Records of Consent? (Gold Standard)**"
-Task2: please make it also save the timestamps:
-"
-<?php
-
-declare(strict_types=1);
-
-/* ─── 0 · Logging setup ─────────────────────────────────────────── */
-
-$logDir = dirname(__DIR__, 2) . '/logs';
-
-if (!is_dir($logDir) && !mkdir($logDir, 0775, true) && !is_dir($logDir)) {
-
-    error_log('[consent] could not create log directory');
-
-}
-
-ini_set('log_errors', 1);
-
-ini_set('error_log', $logDir . '/consent.log');
-
-error_log('[consent] request start');
-
-  
-
-/* ─── 1 · Bootstrap + config ────────────────────────────────────── */
-
-require_once dirname(__DIR__, 2) . '/bootstrap.php';
-
-require_once dirname(__DIR__, 2) . '/config.php';
-
-  
-
-use MongoDB\BSON\ObjectId;
-
-use MongoDB\Driver\{Manager, BulkWrite};
-
-  
-
-dbg('consent: begin');
-
-  
-
-/* ─── 2 · Only POST ──────────────────────────────────────────────── */
-
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-
-    http_response_code(405);
-
-    echo json_encode(['error' => 'Only POST']);
-
-    exit;
-
-}
-
-  
-
-$claims = auth();               // will 401 & exit on failure
-
-$userId = $claims->sub;
-
-  
-
-$raw    = file_get_contents('php://input');
-
-$data   = json_decode($raw, true);
-
-  
-
-if (json_last_error() !== JSON_ERROR_NONE) {
-
-    http_response_code(400);
-
-    echo json_encode(['error' => 'Invalid JSON']);
-
-    exit;
-
-}
-
-  
-
-$bulk = new BulkWrite();
-
-$bulk->update(
-
-    ['_id' => new ObjectId($userId)],
-
-    ['$set' => ['userdata.consents' => $data]],
-
-    ['multi' => false]
-
-);
-
-  
-
-$manager = new Manager($mongoURI);
-
-$manager->executeBulkWrite("$mongoDb.users", $bulk);
-
-  
-
-echo json_encode(['status' => 'ok']);
-"
+  "
+  > [please check if this is extensive and is making the consents truly effective on the phone]

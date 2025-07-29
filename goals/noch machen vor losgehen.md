@@ -1,0 +1,3 @@
+- [x] [[nico schreiben google doc als vorlage]]
+- [x] alle files rate limmiten in new_signup
+- [ ] kiosk bezahlen

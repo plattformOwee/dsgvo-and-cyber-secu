@@ -48,9 +48,30 @@
 			- [ ] Add brute-force protection to the re-authentication prompts used by the user rights API.
 		- [ ] von #5 privacy policy abschnitt schauen, dass er wirklich in der privacy policy is
 		- [ ] vojn #4 schauen das die sicherheit gewährt ist
-			- [ ] rate limit (DoS)
-			- [ ] re auth prompt
-			- [ ] download url nur 24 h gültig
+			- [x] rate limit (DoS)
+				- [x] login_email.php
+				- [x] name_lastname.php
+				- [x] signup_email.php
+				- [x] saveProfile.php
+				- [x] update_convostarter
+				- [x] update_loc.php
+				- [x] update_religion.php
+				- [x] update_searching_for.php
+				- [x] update_userdata.php
+				- [x] upload_profile_images.php
+				- [x] login_deviceauth.php
+				- [x] verify_code_login.php
+				- [x] device_auth.php
+				- [x] get_profile.php
+				- [x] add_icebreaker.php
+				- [x] add_languages.php
+				- [x] add_politics.php
+				- [x] add_voicememo.php
+				- [x] age_set.php
+				- [x] choose_gender.php
+				- [x] delete_element.php
+			- [x] re auth prompt
+			- [x] download url nur 24 h gültig
 			- [ ] **2-Man-Rule für Admin-Löschung**     |      Wenn Ops manuell eingreifen muss    kp nochnal chatgpt fragen 
 	- [ ] [[Datenminimierung & Security]]
 	- [ ] [[Auftragsverarbeitung]]
@@ -108,6 +129,30 @@
 	- [ ] [[encrypt as much as possible]]
 	- [ ] [[chatgpt fragen was noch fehlt]]
 
+
+- [ ] firmenanmeldung und rechtliches
+	- [x] geld
+	- [x] beglaubigt.de
+	- [x] [[Gründungsurkunde und Gesellschaftsvertrag]]
+	- [x] notar termin
+	- [x] geld dafür 
+	- [ ] create geschäftkonto
+		- [ ] research the geschäftskonto market 
+		- [ ] decide for one
+		- [ ] make oppointment
+		- [ ] get money from lukas
+		- [ ] got there create and pay in
+	- [ ] send confirmation to notary and request to be listen in handelsregister
+	- [ ] ins transparenzregister eintragen
+		- [ ] herausfinden ob das vor nach handelsregister passieren soll
+			- [ ] anrufen bei beglaubigt
+			- [ ] beim nächsten notar termin nachfragen
+	- [ ] firmen namen auf das Klingelschild packen weil geht nicht nach namen
+	- [ ] beim finanzamt melden und elster account einrichten
+	- [ ] herausfinden wie abbo Einnahmen zu verbuchen sind
+		- [ ] anfangs manuell
+		- [ ] dann schauen wie man es automatisieren kann
+
 - [x] Geld für notar auftreiben 7
 	- [ ] herausfinden wv es ist
 		- [ ] email geschrieben
@@ -139,28 +184,6 @@
 		- [ ] ihn endlich erreichen
 
 
-- [ ] firmenanmeldung und rechtliches
-	- [x] geld
-	- [x] beglaubigt.de
-	- [x] [[Gründungsurkunde und Gesellschaftsvertrag]]
-	- [x] notar termin
-	- [x] geld dafür 
-	- [ ] create geschäftkonto
-		- [ ] research the geschäftskonto market 
-		- [ ] decide for one
-		- [ ] make oppointment
-		- [ ] get money from lukas
-		- [ ] got there create and pay in
-	- [ ] send confirmation to notary and request to be listen in handelsregister
-	- [ ] ins transparenzregister eintragen
-		- [ ] herausfinden ob das vor nach handelsregister passieren soll
-			- [ ] anrufen bei beglaubigt
-			- [ ] beim nächsten notar termin nachfragen
-	- [ ] firmen namen auf das Klingelschild packen weil geht nicht nach namen
-	- [ ] beim finanzamt melden und elster account einrichten
-	- [ ] herausfinden wie abbo Einnahmen zu verbuchen sind
-		- [ ] anfangs manuell
-		- [ ] dann schauen wie man es automatisieren kann
 
 
 
